@@ -1,0 +1,42 @@
+
+
+
+
+.works__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  
+  .works__data {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $hover-works;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+  }
+
+  .works__link {
+    display: inline-flex;
+    font-size: 1.5rem;
+    background-color: $first-color-lighten;
+    color: $first-color;
+    padding: 0.25rem;
+    border-radius: 25rem;
+    margin-bottom: $mb-2;
+  }
+  
+  .works__title {
+    font-size: $h2-font-size;
+    color: $first-color-lighten;
+  }
+  
+  .works__img:hover .works__data {
+    bottom: 0;
+  }

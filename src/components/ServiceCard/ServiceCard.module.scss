@@ -1,0 +1,47 @@
+
+.services__content {
+  padding: 1.5rem 0.5rem;
+  border: 2px solid $first-color;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.services__icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: $first-color;
+  color: $first-color-lighten;
+  border-radius: 50%;
+  margin-bottom: $mb-2;
+  display: inline-flex;
+}
+
+.services__title {
+  font-size: 1.25rem;
+  color: $first-color-dark;
+  margin-bottom: $mb-1;
+}
+
+.services__content,
+.services__icon,
+.services__description,
+.services__title {
+  transition: 0.5s;
+}
+
+.services__content:hover {
+  background-color: $first-color-dark;
+}
+
+.services__content:hover .services__icon {
+  background-color: $first-color-lighten;
+  color: $first-color;
+}
+
+.services__content:hover .services__title {
+  color: $first-color-lighten;
+}
+
+.services__content:hover .services__description {
+  color: $first-color-lighten;
+}
