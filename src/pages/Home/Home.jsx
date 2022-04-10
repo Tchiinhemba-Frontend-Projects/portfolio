@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import { AiFillGithub, AiFillPhone, AiOutlineInstagram } from "react-icons/ai";
+import { AiFillGithub, AiFillPhone, AiOutlineInstagram, AiOutlineLink } from "react-icons/ai";
 import { BiEnvelope, BiMedal } from "react-icons/bi";
 import { MdVerified } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -13,7 +13,7 @@ export function Home() {
           <div className={`${styles["home__container"]} ${styles['bd-grid']}`}>
             <div className={styles["home__data"]}>
               <div className={styles["home__img"]}>
-                <img src="assets/images/perfil.png" alt="" />
+                <img src="https://source.unsplash.com/random" alt="" />
               </div>
 
               <h1 className={styles["home__title"]}>Eládio Cláudio</h1>
@@ -47,7 +47,7 @@ export function Home() {
               <a
                 download="Resume-Eladio-Claudio"
                 href="assets/pdf/Resume-Eládio-Cláudio.pdf"
-                className={` ${styles['button']} ${styles[" home__button"]}`}
+                className={` ${styles['button']} ${styles["home__button"]}`}
               >
                 Get Resume
               </a>
@@ -67,7 +67,7 @@ export function Home() {
                 to do whatever it takes to get what I want.
               </p>
               <img
-                src="assets/images/about.jpg"
+                src="https://source.unsplash.com/random"
                 alt=""
                 className={styles["about__img"]}
               />
@@ -75,7 +75,7 @@ export function Home() {
 
             <div>
               <div className={styles["about__information"]}>
-                <h3 className={styles["about__information"]}>Information</h3>
+                <h3 className={styles["about__information-title"]}>Information</h3>
 
                 <div className={styles["about__information-data"]}>
                   <i className="bx bx-user about__information-icon"></i>
@@ -94,7 +94,7 @@ export function Home() {
               </div>
 
               <div className={styles["about__information"]}>
-                <h3 className={styles["about__information"]}>Experience</h3>
+                <h3 className={styles["about__information-title"]}>Experience</h3>
 
                 <div className={styles["about__information-data"]}>
                   <BiMedal />
@@ -192,7 +192,7 @@ export function Home() {
           </div>
         </section>
 
-        <section className={`${styles["skills__bar"]} ${styles['section']}`}>
+        <section className={`${styles["education"]} ${styles['section']}`}>
           <span className={styles["section-subtitle"]}>Qualification</span>
           <h2 className={styles["section-title"]}>Some Certifications</h2>
 
@@ -328,7 +328,7 @@ export function Home() {
             </div>
 
             <img
-              src="assets/images/oportunity.png"
+              src="https://source.unsplash.com/random"
               alt=""
               className={styles["project__img"]}
             />
@@ -340,8 +340,11 @@ export function Home() {
           <h2 className={styles["section-title"]}>Some Projects</h2>
 
           <div className={`${styles["works__container"]} ${styles["bd-grid"]}`}>
-            <div className={`${styles['works__container']} ${styles['bd-grid']}`}>
-              <img src="assets/images/work1.png" alt="" />
+
+
+            
+            <div className={styles["works__img"]}>
+              <img src="https://source.unsplash.com/random" alt="" />
 
               <div className={styles["works__data"]}>
                 <a
@@ -349,14 +352,16 @@ export function Home() {
                   target="_blank"
                   className={styles["works__link"]}
                 >
-                  <i className="bx bx-link-alt"></i>
+                  <AiOutlineLink />
                 </a>
                 <span className={styles["works__title"]}>Project 1</span>
               </div>
             </div>
 
+
+
             <div className={styles["works__img"]}>
-              <img src="assets/images/work2.png" alt="" />
+              <img src="https://source.unsplash.com/random" alt="" />
 
               <div className={styles["works__data"]}>
                 <a
@@ -364,14 +369,16 @@ export function Home() {
                   target="_blank"
                   className={styles["works__link"]}
                 >
-                  <i className="bx bx-link-alt"></i>
+                  <AiOutlineLink />
                 </a>
                 <span className={styles["works__title"]}>Project 2</span>
               </div>
             </div>
 
+
+
             <div className={styles["works__img"]}>
-              <img src="assets/images/work3.png" alt="" />
+              <img src="https://source.unsplash.com/random" alt="" />
 
               <div className={styles["works__data"]}>
                 <a
@@ -379,14 +386,14 @@ export function Home() {
                   target="_blank"
                   className={styles["works__link"]}
                 >
-                  <i className="bx bx-link-alt"></i>
+                  <AiOutlineLink />
                 </a>
                 <span className={styles["works__title"]}>Project 3</span>
               </div>
             </div>
 
             <div className={styles["works__img"]}>
-              <img src="assets/images/work4.png" alt="" />
+              <img src="https://source.unsplash.com/random" alt="" />
 
               <div className={styles["works__data"]}>
                 <a
@@ -394,14 +401,14 @@ export function Home() {
                   target="_blank"
                   className={styles["works__link"]}
                 >
-                  <i className="bx bx-link-alt"></i>
+                  <AiOutlineLink />
                 </a>
                 <span className={styles["works__title"]}>Project 4</span>
               </div>
             </div>
 
             <div className={styles["works__img"]}>
-              <img src="assets/images/work5.png" alt="" />
+              <img src="https://source.unsplash.com/random" alt="" />
 
               <div className={styles["works__data"]}>
                 <a
@@ -409,14 +416,14 @@ export function Home() {
                   target="_blank"
                   className={styles["works__link"]}
                 >
-                  <i className="bx bx-link-alt"></i>
+                  <AiOutlineLink />
                 </a>
                 <span className={styles["works__title"]}>Project 5</span>
               </div>
             </div>
 
             <div className={styles["works__img"]}>
-              <img src="assets/images/work6.png" alt="" />
+              <img src="https://source.unsplash.com/random" alt="" />
 
               <div className={styles["works__data"]}>
                 <a
@@ -424,7 +431,7 @@ export function Home() {
                   target="_blank"
                   className={styles["works__link"]}
                 >
-                  <i className="bx bx-link-alt"></i>
+                  <AiOutlineLink />
                 </a>
                 <span className={styles["works__title"]}>Project 6</span>
               </div>

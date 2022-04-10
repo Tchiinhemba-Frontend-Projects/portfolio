@@ -1,42 +1,28 @@
+/* ======== GOOGLE FONTS ========= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+
+/* ============= BASE ============= */
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: $header-height, 0, 0, 0;
-  font-family: $body-font;
-  font-size: $normal-font-size;
-  font-weight: $font-medium;
-  background-color: $first-color-light;
-  color: $text-color;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-h3 {
-  font-weight: $font-semi-bold;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 a {
-  text-decoration: none;
   color: $text-color;
 }
 
@@ -45,13 +31,3 @@ img {
   height: auto;
   display: block;
 }
-
-@media screen and (min-width: 1024px) {
-  body {
-    margin: 0;
-    padding-left: $nav-width;
-  }
-}
-
-
-
