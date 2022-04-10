@@ -3,7 +3,10 @@ import styles from "./Home.module.scss";
 import { AiFillGithub, AiFillPhone, AiOutlineInstagram, AiOutlineLink } from "react-icons/ai";
 import { BiEnvelope, BiMedal } from "react-icons/bi";
 import { MdVerified } from "react-icons/md";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaUserCircle } from "react-icons/fa";
+import { ImWordpress } from "react-icons/im";
+
+import { ServiceCard, WorksCard } from '../../components'
 
 export function Home() {
   return (
@@ -78,17 +81,17 @@ export function Home() {
                 <h3 className={styles["about__information-title"]}>Information</h3>
 
                 <div className={styles["about__information-data"]}>
-                  <i className="bx bx-user about__information-icon"></i>
+                  <FaUserCircle className={styles['about__information-icon']}/>
                   <span>Eládio Tchiinhemba</span>
                 </div>
 
                 <div className={styles["about__information-data"]}>
-                  <AiFillPhone />
+                  <AiFillPhone className={styles['about__information-icon']}/>
                   <span>+244931509802</span>
                 </div>
 
                 <div className={styles["about__information-data"]}>
-                  <BiEnvelope />
+                  <BiEnvelope className={styles['about__information-icon']}/>
                   <span>tchiinhemba@gmail.com</span>
                 </div>
               </div>
@@ -97,7 +100,7 @@ export function Home() {
                 <h3 className={styles["about__information-title"]}>Experience</h3>
 
                 <div className={styles["about__information-data"]}>
-                  <BiMedal />
+                  <BiMedal className={styles['about__information-icon']}/>
                   <div>
                     <span className={styles["about__information-subtitle"]}>
                       3 Year Freelancer
@@ -111,7 +114,7 @@ export function Home() {
                 </div>
 
                 <div className={styles["about__information-data"]}>
-                  <MdVerified />
+                  <MdVerified className={styles['about__information-icon']}/>
                   <div>
                     <span className={styles["about__information-subtitle"]}>
                       3 Projects
@@ -273,42 +276,10 @@ export function Home() {
           <h2 className={styles["section-title"]}>My Services</h2>
 
           <div className={`${styles["services__container"]} ${styles['bd-grid']}`}>
-            <div className={styles["services__content"]}>
-              <i className="bx bx-minus-front services__icon"></i>
-              <h3 className={styles["services__title"]}>
-                Frontend development
-              </h3>
-              <p className={styles["services__description"]}>
-                I'm new to the area, but I already have something to give. And I
-                always try to do my best.
-              </p>
-            </div>
-            <div className={styles["services__content"]}>
-              <i className="bx bx-server services__icon"></i>
-              <h3 className={styles["services__title"]}>Backend development</h3>
-              <p className={styles["services__description"]}>
-                I'm new to the area, but I already have something to give. And I
-                always try to do my best.
-              </p>
-            </div>
-            <div className={styles["services__content"]}>
-              <i className="bx bx-pencil services__icon"></i>
-              <h3 className={styles["services__title"]}>Content Writing</h3>
-              <p className={styles["services__description"]}>
-                I'm new to the area, but I already have something to give. And I
-                always try to do my best.
-              </p>
-            </div>
-            <div className={styles["services__content"]}>
-              <i className="bx bxl-wordpress services__icon"></i>
-              <h3 className={styles["services__title"]}>
-                WordPress Development
-              </h3>
-              <p className={styles["services__description"]}>
-                I'm new to the area, but I already have something to give. And I
-                always try to do my best.
-              </p>
-            </div>
+      
+            <ServiceCard icon={<ImWordpress />}/>
+            <ServiceCard icon={<ImWordpress />}/>
+            <ServiceCard icon={<ImWordpress />}/>
           </div>
         </section>
 
@@ -341,101 +312,9 @@ export function Home() {
 
           <div className={`${styles["works__container"]} ${styles["bd-grid"]}`}>
 
-
-            
-            <div className={styles["works__img"]}>
-              <img src="https://source.unsplash.com/random" alt="" />
-
-              <div className={styles["works__data"]}>
-                <a
-                  href="https://eladioclaudio.github.io/"
-                  target="_blank"
-                  className={styles["works__link"]}
-                >
-                  <AiOutlineLink />
-                </a>
-                <span className={styles["works__title"]}>Project 1</span>
-              </div>
-            </div>
-
-
-
-            <div className={styles["works__img"]}>
-              <img src="https://source.unsplash.com/random" alt="" />
-
-              <div className={styles["works__data"]}>
-                <a
-                  href="https://github.com/eladioclaudio/happy"
-                  target="_blank"
-                  className={styles["works__link"]}
-                >
-                  <AiOutlineLink />
-                </a>
-                <span className={styles["works__title"]}>Project 2</span>
-              </div>
-            </div>
-
-
-
-            <div className={styles["works__img"]}>
-              <img src="https://source.unsplash.com/random" alt="" />
-
-              <div className={styles["works__data"]}>
-                <a
-                  href="https://buukando.github.io"
-                  target="_blank"
-                  className={styles["works__link"]}
-                >
-                  <AiOutlineLink />
-                </a>
-                <span className={styles["works__title"]}>Project 3</span>
-              </div>
-            </div>
-
-            <div className={styles["works__img"]}>
-              <img src="https://source.unsplash.com/random" alt="" />
-
-              <div className={styles["works__data"]}>
-                <a
-                  href="https://eladioclaudio.github.io/portfolio/"
-                  target="_blank"
-                  className={styles["works__link"]}
-                >
-                  <AiOutlineLink />
-                </a>
-                <span className={styles["works__title"]}>Project 4</span>
-              </div>
-            </div>
-
-            <div className={styles["works__img"]}>
-              <img src="https://source.unsplash.com/random" alt="" />
-
-              <div className={styles["works__data"]}>
-                <a
-                  href="https://eladioclaudio.github.io/netflix_clone/"
-                  target="_blank"
-                  className={styles["works__link"]}
-                >
-                  <AiOutlineLink />
-                </a>
-                <span className={styles["works__title"]}>Project 5</span>
-              </div>
-            </div>
-
-            <div className={styles["works__img"]}>
-              <img src="https://source.unsplash.com/random" alt="" />
-
-              <div className={styles["works__data"]}>
-                <a
-                  href="https://eladioclaudio.github.io/instagram_clone/"
-                  target="_blank"
-                  className={styles["works__link"]}
-                >
-                  <AiOutlineLink />
-                </a>
-                <span className={styles["works__title"]}>Project 6</span>
-              </div>
-            </div>
+            <WorksCard />
+            <WorksCard />
+            <WorksCard />
           </div>
         </section>
 
