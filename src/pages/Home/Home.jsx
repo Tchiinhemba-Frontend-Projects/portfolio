@@ -423,7 +423,7 @@ export function Home() {
             </div>
 
             <div className={styles["works__img"]}>
-              <img src="ahttps://source.unsplash.com/random" alt="" />
+              <img src="https://source.unsplash.com/random" alt="" />
 
               <div className={styles["works__data"]}>
                 <a
