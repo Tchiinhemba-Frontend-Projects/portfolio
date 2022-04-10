@@ -1,0 +1,116 @@
+
+
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: $mb-2;
+    margin-right: $mb-2;
+  }
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $first-color-lighten;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  }
+
+/*================ NAV ===================*/
+
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 90%;
+  height: 100vh;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: $first-color;
+  transition: .5s;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: $first-color-dark;
+  cursor: pointer;
+}
+
+.nav__item {
+  margin-bottom: $mb-4;
+}
+
+.nav__link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: $first-color-lighten;
+  font-weight: $font-bold;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: $text-color;
+}
+
+.nav__toggle {
+  color: $first-color-dark;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/*================ Show menu ===================*/
+
+.show {
+  left: 0;
+}
+
+/*================ Active menu ===================*/
+
+.active {
+  color: $text-color;
+}
+
+
+
+/* ======== MEDIA QUERY ========= */
+@media screen and (min-width: 768px) {
+  .nav__menu {
+    width: $nav-width;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__toggle,
+  .nav__logo,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__menu {
+    left: 0;
+  }
+
+  .l-header {
+    width: 0;
+  }
+
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
