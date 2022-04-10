@@ -16,28 +16,28 @@ export function Home() {
                 <img src="https://source.unsplash.com/random" alt="" />
               </div>
 
-              <h1 className={styles["home__title"]}>Eládio Cláudio</h1>
+              <h1 className={styles["home__title"]}>Eládio Tchiinhemba</h1>
               <span className={styles["home__profession"]}>
-                Junior Web Developer
+                Software Developer
               </span>
 
               <div className={styles["home__social"]}>
                 <a
-                  href="https://www.linkedin.com/in/eladioclaudio/"
+                  href="https://www.linkedin.com/in/tchiinhemba/"
                   target="_blank"
                   className={styles["home__social-link"]}
                 >
                   <FaLinkedinIn />
                 </a>
                 <a
-                  href="https://github.com/eladioclaudio"
+                  href="https://github.com/tchiinhemba"
                   target="_blank"
                   className={styles["home__social-link"]}
                 >
                   <AiFillGithub />
                 </a>
                 <a
-                  href="https://www.instagram.com/eladio__claudio/"
+                  href="https://www.instagram.com/tchiinhemba/"
                   target="_blank"
                   className={styles["home__social-link"]}
                 >
@@ -62,7 +62,7 @@ export function Home() {
           <div className={`${styles["about__container"]} ${styles["bd-grid"]}`}>
             <div className={styles["about__data"]}>
               <p className={styles["about__description"]}>
-                Hello, I’m Eládio Cláudio, I’m a programmer, in my spare time
+                Hello, I’m Eládio Tchiinhemba, I’m a programmer, in my spare time
                 I’m Iron Man, a determined person, confident and always willing
                 to do whatever it takes to get what I want.
               </p>
@@ -79,7 +79,7 @@ export function Home() {
 
                 <div className={styles["about__information-data"]}>
                   <i className="bx bx-user about__information-icon"></i>
-                  <span>Eládio Cláudio</span>
+                  <span>Eládio Tchiinhemba</span>
                 </div>
 
                 <div className={styles["about__information-data"]}>
@@ -89,7 +89,7 @@ export function Home() {
 
                 <div className={styles["about__information-data"]}>
                   <BiEnvelope />
-                  <span>elladioclaudio@gmail.com</span>
+                  <span>tchiinhemba@gmail.com</span>
                 </div>
               </div>
 
@@ -100,7 +100,7 @@ export function Home() {
                   <BiMedal />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      1 Year Freelancer
+                      3 Year Freelancer
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
@@ -510,7 +510,7 @@ export function Home() {
               <div className={styles["contact__info"]}>
                 <h3 className={styles["contact__subtitle"]}>E-mail</h3>
                 <span className={styles["contact__text"]}>
-                  elladioclaudio@gmail.com
+                  tchiinhemba@gmail.com
                 </span>
               </div>
 
