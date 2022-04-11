@@ -1,0 +1,44 @@
+/* =========Thank page========== */
+
+.thank-body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $first-color-lighten;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: $first-color;
+  color: $first-color-lighten;
+  padding: 1rem 2rem;
+  font-weight: $font-semi-bold;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  margin-top: $mb-4;
+}
+
+.button:hover {
+  background-color: $first-color-dark;
+}
+
+.button__light:hover {
+  color: $first-color-lighten;
+}
+
+@media screen and (min-width: 220px) and (max-width: 800px) {
+  .thank__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thank-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
