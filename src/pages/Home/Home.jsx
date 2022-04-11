@@ -3,12 +3,11 @@ import styles from "./Home.module.scss";
 import {
   AiFillGithub,
   AiFillPhone,
-  AiOutlineInstagram,
-  AiOutlineLink,
 } from "react-icons/ai";
 import { BiEnvelope, BiMedal } from "react-icons/bi";
-import { MdVerified } from "react-icons/md";
-import { FaLinkedinIn, FaUserCircle } from "react-icons/fa";
+import { FiServer } from "react-icons/fi";
+import { MdMonitor, MdVerified } from "react-icons/md";
+import { FaLinkedinIn, FaPencilAlt, FaUserCircle } from "react-icons/fa";
 import { ImWordpress } from "react-icons/im";
 import { BsMedium } from "react-icons/bs";
 
@@ -113,10 +112,10 @@ export function Home() {
                 </h3>
 
                 <div className={styles["about__information-data"]}>
-                  <BiMedal className={styles["about__information-icon"]} />
+                  <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      3 Year Freelancer
+                      3 Years Freelancing
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
@@ -126,7 +125,7 @@ export function Home() {
                   </div>
                 </div>
 
-                <div className={styles["about__information-data"]}>
+                {/* <div className={styles["about__information-data"]}>
                   <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
@@ -138,7 +137,23 @@ export function Home() {
                       Completed
                     </span>
                   </div>
+                </div> */}
+
+
+                <div className={styles["about__information-data"]}>
+                  <BiMedal className={styles["about__information-icon"]} />
+                  <div>
+                    <span className={styles["about__information-subtitle"]}>
+                      8 Months as Frontend Developer
+                    </span>
+                    <span
+                      className={styles["about__information-subtitle-small"]}
+                    >
+                      at Bukaapp
+                    </span>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -176,13 +191,14 @@ export function Home() {
               <h3 className={styles["skills__subtitle"]}>Wordpress</h3>
               <Skill nameSkill="Wordpress Plataform" xp={80} />
               <Skill nameSkill="Google Analytics" xp={70} />
-              <Skill nameSkill="SEO" xp={70} />
-              <Skill nameSkill="Ads" xp={70} />
+              <Skill nameSkill="Woocommerce" xp={80} />
+              <Skill nameSkill="Ads" xp={40} />
             </div>
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Others</h3>
-              <Skill nameSkill="SQL" xp={70} />
+              <Skill nameSkill="Problem Solving" xp={70} />
+              <Skill nameSkill="Communication" xp={90} />
             </div>
           </div>
         </section>
@@ -194,7 +210,9 @@ export function Home() {
           <div
             className={`${styles["education__container"]} ${styles["bd-grid"]}`}
           >
+            <Education year={2022} institute="Hacker Rank" course="CSS Certification"/>
             <Education year={2020} institute="Digital Innovation One" course="HTML Web Developer (BootCamp)"/>
+            <Education year={2019} institute="Politecnico de Benguela" course="Eletronica Industrial e Automacao"/>
           </div>
         </section>
 
@@ -209,13 +227,30 @@ export function Home() {
             className={`${styles["services__container"]} ${styles["bd-grid"]}`}
           >
             <ServiceCard
-              icon={<ImWordpress />}
-              title="WordPress Development"
-              description="I'm new to the area, but I already have something to give. And I always
-        try to do my best."
+              icon={<MdMonitor />}
+              title="Frontend Development"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
             />
-            <ServiceCard icon={<ImWordpress />} />
-            <ServiceCard icon={<ImWordpress />} />
+
+            <ServiceCard
+              icon={<FiServer />}
+              title="Backend Development"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+            />
+
+            <ServiceCard
+              icon={<ImWordpress />}
+              title="Wordpress Development"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+            />
+            
+            <ServiceCard
+              icon={<FaPencilAlt />}
+              title="Content Writer"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+            />
+            
+            
           </div>
         </section>
 

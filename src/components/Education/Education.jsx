@@ -17,7 +17,7 @@ export function Education(props) {
       </div>
 
       <div>
-        <h3 className={styles["education__race"]}>Course Certificate</h3>
+        <h3 className={styles["education__race"]}>Course Or Certification</h3>
         <span className={styles["education__specialty"]}>{course}</span>
       </div>
     </div>
