@@ -272,6 +272,7 @@ export function Home() {
             />
           </div>
         </section>
+        
 
         <section className={`${styles["project"]} ${styles["section"]}`}>
           <div
