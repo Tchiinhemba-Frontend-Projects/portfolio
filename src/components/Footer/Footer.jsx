@@ -12,8 +12,8 @@ export function Footer(props) {
       <div className={`${styles["footer__container"]} ${styles["bd-grid"]}`}>
         <h1 className={`${styles["footer__title"]}`}>Eládio Tchiinhemba</h1>
         <p className={`${styles["footer__description"]}`}>
-          I am Eládio Tchiinhemba and this is my personal website, consult me
-          here
+          Eu sou Eládio Tchiinhemba e este é o meu site pessoal, consulte-me
+          aqui
         </p>
 
         <div className={`${styles["footer__social"]}`}>
@@ -41,7 +41,7 @@ export function Footer(props) {
         </div>
 
         <p className={`${styles["footer__copy"]}`}>
-          All right reserved by Eládio Tchiinhemba - {currentYear()}
+          Todos os direitos reservados por Eládio Tchiinhemba - {currentYear()}
         </p>
       </div>
     </footer>

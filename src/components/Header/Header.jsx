@@ -20,20 +20,7 @@ export function Header(props) {
     return toggle;
   }
 
-  if (toggler()) {
-    console.log("==>", toggler());
-  } else {
-    console.log("==>", toggler());
-  }
-
   const wrapperRef = useRef(null);
-
-  useEffect(() => {
-    const childrens = Array.from(wrapperRef.current.children)
-    childrens.forEach((children, index) => {
-      // const linkItem = Array.forEach
-    })
-  }, [])
 
   return (
     <React.Fragment>
@@ -61,38 +48,47 @@ export function Header(props) {
               <GrClose />
             </div>
 
-            <ul className={styles["nav__list"]} ref={wrapperRef}>
+            <ul className={styles["nav__list"]}>
               <li className={styles["nav__item"]}>
                 <a
                   href="#home"
-                  className={`${styles["nav__link"]} ${styles["active"]}`}
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
                 >
-                  Home
+                  Início
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#about" className={`${styles["nav__link"]}`}>
-                  About
+                <a
+                  href="#about"
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
+                >
+                  Sobre
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#skills" className={`${styles["nav__link"]}`}>
-                  Skills
+                <a
+                  href="#skills"
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
+                >
+                  Habilidades
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#services" className={`${styles["nav__link"]}`}>
-                  Services
+                <a href="#services" className={`${styles["nav__link"]}`} onClick={() => show()}>
+                Serviços
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#works" className={`${styles["nav__link"]}`}>
-                  Projects
+                <a href="#works" className={`${styles["nav__link"]}`} onClick={() => show()}>
+                  Projectos
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#contact" className={`${styles["nav__link"]}`}>
-                  Contact me
+                <a href="#contact" className={`${styles["nav__link"]}`} onClick={() => show()}>
+                  Contacto
                 </a>
               </li>
             </ul>
