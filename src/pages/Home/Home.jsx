@@ -206,7 +206,7 @@ export function Home() {
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Outras</h3>
-              <Skill nameSkill="Solução de problemas" xp={70} />
+              <Skill nameSkill="Resolução de problemas" xp={70} />
               <Skill nameSkill="Comunicação" xp={90} />
             </div>
           </div>
