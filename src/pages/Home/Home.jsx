@@ -99,7 +99,7 @@ export function Home() {
             <div>
               <div className={styles["about__information"]}>
                 <h3 className={styles["about__information-title"]}>
-                Informação
+                  Informação
                 </h3>
 
                 <div className={styles["about__information-data"]}>
@@ -120,14 +120,14 @@ export function Home() {
 
               <div className={styles["about__information"]}>
                 <h3 className={styles["about__information-title"]}>
-                Experiência
+                  Experiência
                 </h3>
 
                 <div className={styles["about__information-data"]}>
                   <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                    2 anos como freelancer
+                      2 anos como freelancer
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
@@ -155,7 +155,7 @@ export function Home() {
                   <BiMedal className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                    8 meses como desenvolvedor frontend
+                      8 meses como desenvolvedor frontend
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
@@ -194,12 +194,11 @@ export function Home() {
               <Skill nameSkill="node.js" xp={40} />
               <Skill nameSkill="mongodb" xp={28} />
               <Skill nameSkill="express" xp={38} />
-              <Skill nameSkill="SQL" xp={23} />
             </div>
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Wordpress</h3>
-              <Skill nameSkill="Wordpress Plataform" xp={80} />
+              <Skill nameSkill="Plataforma Wordpress" xp={80} />
               <Skill nameSkill="Google Analytics" xp={70} />
               <Skill nameSkill="Woocommerce" xp={80} />
               <Skill nameSkill="Ads" xp={40} />
@@ -207,8 +206,8 @@ export function Home() {
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Outras</h3>
-              <Skill nameSkill="Problem Solving" xp={70} />
-              <Skill nameSkill="Communication" xp={90} />
+              <Skill nameSkill="Solução de problemas" xp={70} />
+              <Skill nameSkill="Comunicação" xp={90} />
             </div>
           </div>
         </section>
@@ -250,26 +249,26 @@ export function Home() {
           >
             <ServiceCard
               icon={<MdMonitor />}
-              title="Frontend Development"
-              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+              title="Desenvolvedor Frontend"
+              description="Crio sites estáticos e responsivos com HTML, CSS, JavaScript, etc..."
             />
 
             <ServiceCard
               icon={<FiServer />}
-              title="Backend Development"
-              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+              title="Desenvolvedor Backend"
+              description="Sou novo na área, mas já tenho algo para dar. E sempre tento fazer o meu melhor."
             />
 
             <ServiceCard
               icon={<ImWordpress />}
-              title="Wordpress Development"
-              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+              title="Desenvolvedor WordPress"
+              description="Possuo experiência com WordPress desde a criação de sites, blogues, até lojas virtuais."
             />
 
             <ServiceCard
               icon={<FaPencilAlt />}
-              title="Content Writer"
-              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+              title="Criador de Conteúdo"
+              description="Escrevo alguns blog posts focados em tecnologia em algumas plataformas na plataforma Medium."
             />
           </div>
         </section>
@@ -285,7 +284,8 @@ export function Home() {
                 Oportunidade de trabalho para mim?
               </h2>
               <p className={styles["project__description"]}>
-              Sou um desenvolvedor com alguma experiência, se você estiver interessado em mim, por favor me diga qualquer coisa.
+                Sou um desenvolvedor com alguma experiência, se você estiver
+                interessado em mim, por favor me diga qualquer coisa.
               </p>
               <a
                 href="#contact"
