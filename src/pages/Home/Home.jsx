@@ -268,7 +268,7 @@ export function Home() {
             <ServiceCard
               icon={<FaPencilAlt />}
               title="Criador de Conteúdo"
-              description="Escrevo alguns blog posts focados em tecnologia em algumas plataformas na plataforma Medium."
+              description="Escrevo alguns blog posts focados em tecnologia na plataforma Medium."
             />
           </div>
         </section>
