@@ -72,7 +72,7 @@ export function Home() {
                 href="assets/pdf/Resume-Eládio-Cláudio.pdf"
                 className={` ${styles["button"]} ${styles["home__button"]}`}
               >
-                Get Resume
+                Descarregar Currículo
               </a>
             </div>
           </div>
@@ -88,7 +88,7 @@ export function Home() {
           <div className={`${styles["about__container"]} ${styles["bd-grid"]}`}>
             <div className={styles["about__data"]}>
               <p className={styles["about__description"]}>
-                Ola eu sou o Eládio, um jovem de {age} anos, amante de
+                Olá eu sou o Eládio, um jovem de {age} anos, amante de
                 tecnologia, curioso e autodidata. Sempre dispostos a aprender
                 coisas novas, enfrentar novos desafios e focado em construir uma
                 carreira de sucesso.
@@ -155,7 +155,7 @@ export function Home() {
                   <BiMedal className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      8 meses como desenvolvedor frontend
+                      8 Meses como Dev Frontend
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
@@ -197,7 +197,7 @@ export function Home() {
             </div>
 
             <div className={styles["skills__content"]}>
-              <h3 className={styles["skills__subtitle"]}>Wordpress</h3>
+              <h3 className={styles["skills__subtitle"]}>WordPress</h3>
               <Skill nameSkill="Plataforma Wordpress" xp={80} />
               <Skill nameSkill="Google Analytics" xp={70} />
               <Skill nameSkill="Woocommerce" xp={80} />
@@ -272,7 +272,6 @@ export function Home() {
             />
           </div>
         </section>
-        
 
         <section className={`${styles["project"]} ${styles["section"]}`}>
           <div
