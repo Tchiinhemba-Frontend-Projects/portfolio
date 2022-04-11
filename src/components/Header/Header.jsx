@@ -9,23 +9,31 @@ export function Header(props) {
   const navMenu = useRef(null);
 
   function show() {
-
-    if(navMenu.current.classList.contains(styles['show'])) {
+    if (navMenu.current.classList.contains(styles["show"])) {
       setToggle("");
     } else {
-      setToggle(styles['show']);
+      setToggle(styles["show"]);
     }
   }
 
   function toggler() {
-    return toggle;    
+    return toggle;
   }
 
-  if(toggler()) {
-    console.log('==>', toggler())
+  if (toggler()) {
+    console.log("==>", toggler());
   } else {
-    console.log('==>', toggler())
+    console.log("==>", toggler());
   }
+
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    const childrens = Array.from(wrapperRef.current.children)
+    childrens.forEach((children, index) => {
+      // const linkItem = Array.forEach
+    })
+  }, [])
 
   return (
     <React.Fragment>
@@ -41,12 +49,19 @@ export function Header(props) {
             </a>
           </div>
 
-          <div className={ toggler() ? `${styles["nav__menu"]} ${toggler()}`: `${styles["nav__menu"]}`} ref={navMenu}>
+          <div
+            className={
+              toggler()
+                ? `${styles["nav__menu"]} ${toggler()}`
+                : `${styles["nav__menu"]}`
+            }
+            ref={navMenu}
+          >
             <div className={styles["nav__close"]} onClick={() => show()}>
               <GrClose />
             </div>
 
-            <ul className={styles["nav__list"]}>
+            <ul className={styles["nav__list"]} ref={wrapperRef}>
               <li className={styles["nav__item"]}>
                 <a
                   href="#home"
