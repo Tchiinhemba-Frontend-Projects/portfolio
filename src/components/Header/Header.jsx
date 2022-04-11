@@ -1,32 +1,26 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import styles from "./Header.module.scss";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 
 export function Header(props) {
-  const navMenu = document.getElementById("nav-menu"),
-    toggleMenu = document.getElementById("nav-toggle"),
-    closeMenu = document.getElementById("nav-close");
+  const [toggle, setToggle] = useState("");
+  const navMenu = useRef(null);
 
   function show() {
-    navMenu.classList.toggle("show");
-    console.log("OK!");
+    setToggle("show");
   }
 
-  function hidden() {
-    navMenu.classList.remove("show");
+  function toggler() {
+
   }
 
   return (
     <React.Fragment>
       <header className={styles["l-header"]}>
         <nav className={`${styles["nav"]} ${styles["bd-grid"]}`}>
-          <div
-            className={styles["nav__toggle"]}
-            id="nav-toggle"
-            onClick={() => show()}
-          >
+          <div className={styles["nav__toggle"]} onClick={() => show()}>
             <FiMenu />
           </div>
 
@@ -36,8 +30,8 @@ export function Header(props) {
             </a>
           </div>
 
-          <div className={styles["nav__menu"]} id="nav-menu">
-            <div className={styles["nav__close"]} id="nav-close">
+          <div className={`${styles["nav__menu"]} ${toggler()}`} ref={navMenu}>
+            <div className={styles["nav__close"]}>
               <GrClose />
             </div>
 
