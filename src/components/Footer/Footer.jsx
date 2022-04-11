@@ -1,7 +1,8 @@
 import React from "react";
 
 import { FaLinkedinIn } from 'react-icons/fa'
-import { AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
+import { BsMedium } from "react-icons/bs";
 
 import styles from "./Footer.module.scss";
 
@@ -34,7 +35,7 @@ export function Footer(props) {
             className={`${styles['footer__link']}`}
             target="_blank"
           >
-            <AiOutlineInstagram />
+            <BsMedium />
           </a>
         </div>
 

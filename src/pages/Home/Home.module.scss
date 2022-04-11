@@ -50,8 +50,6 @@
 }
 
 .home__img {
-  padding-top: 1.3rem;
-  padding-left: 0.8rem;
   width: 160px;
   height: 160px;
   background-color: $first-color;
@@ -185,115 +183,11 @@
   margin-bottom: $mb-2;
 }
 
-.skills__data {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 $mb-2;
-  margin-bottom: $mb-4;
-}
-
-.skills__name {
-  text-transform: uppercase;
-}
-
-.skills__bar {
-  position: absolute;
-  bottom: -0.75rem;
-  height: 0.25rem;
-  background-color: $first-color;
-}
-
-.skills__html {
-  width: 60%;
-}
-
-.skills__js {
-  width: 35%;
-}
-
-.skills__react {
-  width: 20%;
-}
-
-.skills__angular {
-  width: 25%;
-}
-
-.skills__node {
-  width: 14%;
-}
-
-.skills__mongodb {
-  width: 10%;
-}
-
-.skills__c {
-  width: 8%;
-}
-
-.skills__sql {
-  width: 23%;
-}
-
 /* ======== EDUCATION ========= */
 .education__container {
   row-gap: 2rem;
 }
 
-.education__content {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-}
-
-.education__year,
-.education__race {
-  font-size: $h3-font-size;
-  margin-bottom: 0.25rem;
-}
-
-.education__university,
-.education__specialty {
-  display: block;
-  font-size: $smaller-font-size;
-}
-
-.education__year,
-.education__university {
-  text-align: right;
-}
-
-.education__time {
-  padding: 0 1rem;
-  justify-self: center;
-}
-
-.education__rounder {
-  position: relative;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: $first-color;
-  border-radius: 50%;
-}
-
-.education__rounder::before {
-  content: "";
-  position: absolute;
-  transform: translate(-4px, -4px);
-  width: 20px;
-  height: 20px;
-  border: 1px solid $first-color;
-  border-radius: 50%;
-}
-
-.education__line {
-  display: block;
-  height: 90%;
-  width: 2px;
-  background-color: $first-color;
-  transform: translate(5px, -4px);
-}
 
 /* =========== SERVICES ========= */
 .services__container {
