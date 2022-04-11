@@ -1,9 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Home.module.scss";
-import {
-  AiFillGithub,
-  AiFillPhone,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillPhone } from "react-icons/ai";
 import { BiEnvelope, BiMedal } from "react-icons/bi";
 import { FiServer } from "react-icons/fi";
 import { MdMonitor, MdVerified } from "react-icons/md";
@@ -14,6 +11,16 @@ import { BsMedium } from "react-icons/bs";
 import { Education, ServiceCard, Skill, WorksCard } from "../../components";
 
 export function Home() {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-GLX1L8ZMZF");
+  }, []);
+
   return (
     <React.Fragment>
       <main className={styles["l-main"]}>
@@ -139,7 +146,6 @@ export function Home() {
                   </div>
                 </div> */}
 
-
                 <div className={styles["about__information-data"]}>
                   <BiMedal className={styles["about__information-icon"]} />
                   <div>
@@ -153,7 +159,6 @@ export function Home() {
                     </span>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -210,9 +215,21 @@ export function Home() {
           <div
             className={`${styles["education__container"]} ${styles["bd-grid"]}`}
           >
-            <Education year={2022} institute="Hacker Rank" course="CSS Certification"/>
-            <Education year={2020} institute="Digital Innovation One" course="HTML Web Developer (BootCamp)"/>
-            <Education year={2019} institute="Politecnico de Benguela" course="Eletronica Industrial e Automacao"/>
+            <Education
+              year={2022}
+              institute="Hacker Rank"
+              course="CSS Certification"
+            />
+            <Education
+              year={2020}
+              institute="Digital Innovation One"
+              course="HTML Web Developer (BootCamp)"
+            />
+            <Education
+              year={2019}
+              institute="Politecnico de Benguela"
+              course="Eletronica Industrial e Automacao"
+            />
           </div>
         </section>
 
@@ -243,14 +260,12 @@ export function Home() {
               title="Wordpress Development"
               description="I'm new to the area, but I already have something to give. And I always try to do my best."
             />
-            
+
             <ServiceCard
               icon={<FaPencilAlt />}
               title="Content Writer"
               description="I'm new to the area, but I already have something to give. And I always try to do my best."
             />
-            
-            
           </div>
         </section>
 
