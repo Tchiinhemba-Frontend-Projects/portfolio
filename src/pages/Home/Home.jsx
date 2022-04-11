@@ -9,6 +9,10 @@ import { ImWordpress } from "react-icons/im";
 import { BsMedium } from "react-icons/bs";
 
 import { Education, ServiceCard, Skill, WorksCard } from "../../components";
+import profile from '../../assets/images/profile.jpg'
+import oportunity from '../../assets/images/oportunity.png'
+
+import work1 from '../../assets/images/work1.jpeg'
 
 export function Home() {
   useEffect(() => {
@@ -28,7 +32,7 @@ export function Home() {
           <div className={`${styles["home__container"]} ${styles["bd-grid"]}`}>
             <div className={styles["home__data"]}>
               <div className={styles["home__img"]}>
-                <img src="https://source.unsplash.com/random" alt="" />
+                <img src={profile} alt="" />
               </div>
 
               <h1 className={styles["home__title"]}>Eládio Tchiinhemba</h1>
@@ -85,7 +89,7 @@ export function Home() {
                 willing to do whatever it takes to get what I want.
               </p>
               <img
-                src="https://source.unsplash.com/random"
+                src={profile}
                 alt=""
                 className={styles["about__img"]}
               />
@@ -292,7 +296,7 @@ export function Home() {
             </div>
 
             <img
-              src="https://source.unsplash.com/random"
+              src={oportunity}
               alt=""
               className={styles["project__img"]}
             />
@@ -310,18 +314,21 @@ export function Home() {
             <WorksCard
               link="https://google.com"
               title="Project"
-              bgPath="https://source.unsplash.com/random"
+              bgPath={work1}
             />
+            
             <WorksCard
               link="https://google.com"
               title="Project"
-              bgPath="https://source.unsplash.com/random"
+              bgPath={work1}
             />
+            
             <WorksCard
               link="https://google.com"
               title="Project"
-              bgPath="https://source.unsplash.com/random"
+              bgPath={work1}
             />
+            
           </div>
         </section>
 

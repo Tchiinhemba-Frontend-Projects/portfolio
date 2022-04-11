@@ -9,11 +9,22 @@ export function Header(props) {
   const navMenu = useRef(null);
 
   function show() {
-    setToggle("show");
+
+    if(navMenu.current.classList.contains(styles['show'])) {
+      setToggle("");
+    } else {
+      setToggle(styles['show']);
+    }
   }
 
   function toggler() {
+    return toggle;    
+  }
 
+  if(toggler()) {
+    console.log('==>', toggler())
+  } else {
+    console.log('==>', toggler())
   }
 
   return (
@@ -30,8 +41,8 @@ export function Header(props) {
             </a>
           </div>
 
-          <div className={`${styles["nav__menu"]} ${toggler()}`} ref={navMenu}>
-            <div className={styles["nav__close"]}>
+          <div className={ toggler() ? `${styles["nav__menu"]} ${toggler()}`: `${styles["nav__menu"]}`} ref={navMenu}>
+            <div className={styles["nav__close"]} onClick={() => show()}>
               <GrClose />
             </div>
 
