@@ -15,8 +15,6 @@ import oportunity from "../../assets/images/oportunity.png";
 import work1 from "../../assets/images/work1.jpeg";
 import work2 from "../../assets/images/work2.jpeg";
 import work3 from "../../assets/images/work3.jpeg";
-import { Thank } from "../Thank/Thank";
-import { useNavigate } from "react-router-dom";
 
 export function Home() {
   useEffect(() => {
@@ -30,12 +28,6 @@ export function Home() {
   }, []);
 
   const age = new Date().getFullYear() - 2000;
-
-  let navigate = useNavigate();
-
-  function thankPage() {
-    navigate('/thank')
-  }
 
   return (
     <React.Fragment>
@@ -387,13 +379,16 @@ export function Home() {
                 name="_autoresponse"
                 value="your custom message"
               />
-              
+              <input
+                type="hidden"
+                name="_next"
+                value="https://tchiinhemba.vercel.app/thank"
+              />
 
               <button
                 type="submit"
                 value="Send Message"
                 className={`${styles["button"]} ${styles["contact__button"]}`}
-                onclick={() => thankPage()}
               >
                 Enviar
               </button>
