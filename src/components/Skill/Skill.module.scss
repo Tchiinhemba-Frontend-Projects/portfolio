@@ -1,0 +1,18 @@
+.skills__data {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 $mb-2;
+    margin-bottom: $mb-4;
+  }
+  
+  .skills__name {
+    text-transform: uppercase;
+  }
+  
+  .skills__bar {
+    position: absolute;
+    bottom: -0.75rem;
+    height: 0.25rem;
+    background-color: $first-color;
+  }

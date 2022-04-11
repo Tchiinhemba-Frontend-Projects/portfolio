@@ -1,32 +1,45 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import styles from "./Header.module.scss";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 
 export function Header(props) {
-  const navMenu = document.getElementById("nav-menu"),
-    toggleMenu = document.getElementById("nav-toggle"),
-    closeMenu = document.getElementById("nav-close");
+  const [toggle, setToggle] = useState("");
+  const navMenu = useRef(null);
 
   function show() {
-    navMenu.classList.toggle("show");
-    console.log("OK!");
+    if (navMenu.current.classList.contains(styles["show"])) {
+      setToggle("");
+    } else {
+      setToggle(styles["show"]);
+    }
   }
 
-  function hidden() {
-    navMenu.classList.remove("show");
+  function toggler() {
+    return toggle;
   }
+
+  if (toggler()) {
+    console.log("==>", toggler());
+  } else {
+    console.log("==>", toggler());
+  }
+
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    const childrens = Array.from(wrapperRef.current.children)
+    childrens.forEach((children, index) => {
+      // const linkItem = Array.forEach
+    })
+  }, [])
 
   return (
     <React.Fragment>
       <header className={styles["l-header"]}>
         <nav className={`${styles["nav"]} ${styles["bd-grid"]}`}>
-          <div
-            className={styles["nav__toggle"]}
-            id="nav-toggle"
-            onClick={() => show()}
-          >
+          <div className={styles["nav__toggle"]} onClick={() => show()}>
             <FiMenu />
           </div>
 
@@ -36,12 +49,19 @@ export function Header(props) {
             </a>
           </div>
 
-          <div className={styles["nav__menu"]} id="nav-menu">
-            <div className={styles["nav__close"]} id="nav-close">
+          <div
+            className={
+              toggler()
+                ? `${styles["nav__menu"]} ${toggler()}`
+                : `${styles["nav__menu"]}`
+            }
+            ref={navMenu}
+          >
+            <div className={styles["nav__close"]} onClick={() => show()}>
               <GrClose />
             </div>
 
-            <ul className={styles["nav__list"]}>
+            <ul className={styles["nav__list"]} ref={wrapperRef}>
               <li className={styles["nav__item"]}>
                 <a
                   href="#home"

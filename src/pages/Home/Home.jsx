@@ -1,22 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Home.module.scss";
-import { AiFillGithub, AiFillPhone, AiOutlineInstagram, AiOutlineLink } from "react-icons/ai";
+import { AiFillGithub, AiFillPhone } from "react-icons/ai";
 import { BiEnvelope, BiMedal } from "react-icons/bi";
-import { MdVerified } from "react-icons/md";
-import { FaLinkedinIn, FaUserCircle } from "react-icons/fa";
+import { FiServer } from "react-icons/fi";
+import { MdMonitor, MdVerified } from "react-icons/md";
+import { FaLinkedinIn, FaPencilAlt, FaUserCircle } from "react-icons/fa";
 import { ImWordpress } from "react-icons/im";
+import { BsMedium } from "react-icons/bs";
 
-import { ServiceCard, WorksCard } from '../../components'
+import { Education, ServiceCard, Skill, WorksCard } from "../../components";
+import profile from '../../assets/images/profile.jpg'
+import oportunity from '../../assets/images/oportunity.png'
+
+import work1 from '../../assets/images/work1.jpeg'
 
 export function Home() {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-GLX1L8ZMZF");
+  }, []);
+
   return (
     <React.Fragment>
       <main className={styles["l-main"]}>
         <section className={styles["home"]} id="home">
-          <div className={`${styles["home__container"]} ${styles['bd-grid']}`}>
+          <div className={`${styles["home__container"]} ${styles["bd-grid"]}`}>
             <div className={styles["home__data"]}>
               <div className={styles["home__img"]}>
-                <img src="https://source.unsplash.com/random" alt="" />
+                <img src={profile} alt="" />
               </div>
 
               <h1 className={styles["home__title"]}>Eládio Tchiinhemba</h1>
@@ -40,17 +56,17 @@ export function Home() {
                   <AiFillGithub />
                 </a>
                 <a
-                  href="https://www.instagram.com/tchiinhemba/"
+                  href="https://tchiinhemba.medium.com"
                   target="_blank"
                   className={styles["home__social-link"]}
                 >
-                  <AiOutlineInstagram />
+                  <BsMedium />
                 </a>
               </div>
               <a
                 download="Resume-Eladio-Claudio"
                 href="assets/pdf/Resume-Eládio-Cláudio.pdf"
-                className={` ${styles['button']} ${styles["home__button"]}`}
+                className={` ${styles["button"]} ${styles["home__button"]}`}
               >
                 Get Resume
               </a>
@@ -58,19 +74,22 @@ export function Home() {
           </div>
         </section>
 
-        <section className={`${styles["about"]} ${styles['section']}`} id="about">
+        <section
+          className={`${styles["about"]} ${styles["section"]}`}
+          id="about"
+        >
           <span className={styles["section-subtitle"]}>My intro</span>
           <h2 className={styles["section-title"]}>About Me</h2>
 
           <div className={`${styles["about__container"]} ${styles["bd-grid"]}`}>
             <div className={styles["about__data"]}>
               <p className={styles["about__description"]}>
-                Hello, I’m Eládio Tchiinhemba, I’m a programmer, in my spare time
-                I’m Iron Man, a determined person, confident and always willing
-                to do whatever it takes to get what I want.
+                Hello, I’m Eládio Tchiinhemba, I’m a programmer, in my spare
+                time I’m Iron Man, a determined person, confident and always
+                willing to do whatever it takes to get what I want.
               </p>
               <img
-                src="https://source.unsplash.com/random"
+                src={profile}
                 alt=""
                 className={styles["about__img"]}
               />
@@ -78,32 +97,36 @@ export function Home() {
 
             <div>
               <div className={styles["about__information"]}>
-                <h3 className={styles["about__information-title"]}>Information</h3>
+                <h3 className={styles["about__information-title"]}>
+                  Information
+                </h3>
 
                 <div className={styles["about__information-data"]}>
-                  <FaUserCircle className={styles['about__information-icon']}/>
+                  <FaUserCircle className={styles["about__information-icon"]} />
                   <span>Eládio Tchiinhemba</span>
                 </div>
 
                 <div className={styles["about__information-data"]}>
-                  <AiFillPhone className={styles['about__information-icon']}/>
+                  <AiFillPhone className={styles["about__information-icon"]} />
                   <span>+244931509802</span>
                 </div>
 
                 <div className={styles["about__information-data"]}>
-                  <BiEnvelope className={styles['about__information-icon']}/>
+                  <BiEnvelope className={styles["about__information-icon"]} />
                   <span>tchiinhemba@gmail.com</span>
                 </div>
               </div>
 
               <div className={styles["about__information"]}>
-                <h3 className={styles["about__information-title"]}>Experience</h3>
+                <h3 className={styles["about__information-title"]}>
+                  Experience
+                </h3>
 
                 <div className={styles["about__information-data"]}>
-                  <BiMedal className={styles['about__information-icon']}/>
+                  <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      3 Year Freelancer
+                      3 Years Freelancing
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
@@ -113,8 +136,8 @@ export function Home() {
                   </div>
                 </div>
 
-                <div className={styles["about__information-data"]}>
-                  <MdVerified className={styles['about__information-icon']}/>
+                {/* <div className={styles["about__information-data"]}>
+                  <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
                       3 Projects
@@ -125,204 +148,200 @@ export function Home() {
                       Completed
                     </span>
                   </div>
+                </div> */}
+
+                <div className={styles["about__information-data"]}>
+                  <BiMedal className={styles["about__information-icon"]} />
+                  <div>
+                    <span className={styles["about__information-subtitle"]}>
+                      8 Months as Frontend Developer
+                    </span>
+                    <span
+                      className={styles["about__information-subtitle-small"]}
+                    >
+                      at Bukaapp
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className={`${styles["skills"]} ${styles['section']}`} id="skills">
+        <section
+          className={`${styles["skills"]} ${styles["section"]}`}
+          id="skills"
+        >
           <span className={styles["section-subtitle"]}>Why Chose Me</span>
           <h2 className={styles["section-title"]}>My Skills</h2>
 
-          <div className={`${styles["skills__container"]} ${styles['bd-grid']}`}>
+          <div
+            className={`${styles["skills__container"]} ${styles["bd-grid"]}`}
+          >
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Frontend</h3>
 
-              <div className={styles["skills__data"]}>
-                <span className={styles["skills__name"]}>HTML/CSS</span>
-                <span className={styles["skills__number"]}>60%</span>
-                <span className={`${styles["skills__bar"]} ${styles['skills__html']}`}></span>
-              </div>
-
-              <div className={styles["skills__data"]}>
-                <span className={styles["skills__name"]}>Javascript</span>
-                <span className={styles["skills__number"]}>35%</span>
-                <span className={`${styles["skills__bar"]} ${styles['skills__js']}`}></span>
-              </div>
-
-              <div className={styles["skills__data"]}>
-                <span className={styles["skills__name"]}>React</span>
-                <span className={styles["skills__number"]}>20%</span>
-                <span className={`${styles["skills__bar"]} ${styles['skills__react']}`}></span>
-              </div>
-
-              <div className={styles["skills__data"]}>
-                <span className={styles["skills__name"]}>Angular</span>
-                <span className={styles["skills__number"]}>25%</span>
-                <span className={`${styles["skills__bar"]} ${styles['skills__angular']}`}></span>
-              </div>
+              <Skill nameSkill="react.js" xp={58} />
+              <Skill nameSkill="javascript" xp={69} />
+              <Skill nameSkill="css/sass" xp={80} />
+              <Skill nameSkill="react native" xp={25} />
             </div>
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Backend</h3>
 
-              <div className={styles["skills__data"]}>
-                <span className={styles["skills__name"]}>Node js</span>
-                <span className={styles["skills__number"]}>14%</span>
-                <span className={styles["skills__bar"]}></span>
-                <span className={`${styles["skills__bar"]} ${styles['skills__node']}`}></span>
-              </div>
+              <Skill nameSkill="node.js" xp={40} />
+              <Skill nameSkill="mongodb" xp={28} />
+              <Skill nameSkill="express" xp={38} />
+              <Skill nameSkill="SQL" xp={23} />
+            </div>
 
-              <div className={styles["skills__data"]}>
-                <span className={styles["skills__name"]}>MongoDb</span>
-                <span className={styles["skills__number"]}>10%</span>
-                <span className={`${styles["skills__bar"]} ${styles['skills__mongodb']}`}></span>
-              </div>
+            <div className={styles["skills__content"]}>
+              <h3 className={styles["skills__subtitle"]}>Wordpress</h3>
+              <Skill nameSkill="Wordpress Plataform" xp={80} />
+              <Skill nameSkill="Google Analytics" xp={70} />
+              <Skill nameSkill="Woocommerce" xp={80} />
+              <Skill nameSkill="Ads" xp={40} />
+            </div>
 
-              <div className={styles["skills__data"]}>
-                <span className={styles["skills__name"]}>C</span>
-                <span className={styles["skills__number"]}>8%</span>
-                <span className={`${styles["skills__bar"]} ${styles['skills__c']}`}></span>
-              </div>
-
-              <div className={styles["skills__data"]}>
-                <span className={styles["skills__name"]}>Sql</span>
-                <span className={styles["skills__number"]}>23%</span>
-                <span className={`${styles["skills__bar"]} ${styles['section']}`}></span>
-              </div>
+            <div className={styles["skills__content"]}>
+              <h3 className={styles["skills__subtitle"]}>Others</h3>
+              <Skill nameSkill="Problem Solving" xp={70} />
+              <Skill nameSkill="Communication" xp={90} />
             </div>
           </div>
         </section>
 
-        <section className={`${styles["education"]} ${styles['section']}`}>
+        <section className={`${styles["education"]} ${styles["section"]}`}>
           <span className={styles["section-subtitle"]}>Qualification</span>
           <h2 className={styles["section-title"]}>Some Certifications</h2>
 
-          <div className={`${styles["education__container"]} ${styles['bd-grid']}`}>
-            <div className={styles["education__content"]}>
-              <div>
-                <h3 className={styles["education__year"]}>2020</h3>
-                <span className={styles["education__university"]}>
-                  Digital Innovations One
-                </span>
-              </div>
-
-              <div className={styles["education__time"]}>
-                <span className={styles["education__rounder"]}></span>
-                <span className={styles["education__line"]}></span>
-              </div>
-
-              <div>
-                <h3 className={styles["education__race"]}>
-                  Course Certificate
-                </h3>
-                <span className={styles["education__specialty"]}>
-                  HTML Web Developer (BootCamp)
-                </span>
-              </div>
-            </div>
-
-            <div className={styles["education__content"]}>
-              <div>
-                <h3 className={styles["education__year"]}>2020</h3>
-                <span className={styles["education__university"]}>
-                  Fundação Bradesco
-                </span>
-              </div>
-
-              <div className={styles["education__time"]}>
-                <span className={styles["education__rounder"]}></span>
-                <span className={styles["education__line"]}></span>
-              </div>
-
-              <div>
-                <h3 className={styles["education__race"]}>
-                  Course Certificate
-                </h3>
-                <span className={styles["education__specialty"]}>
-                  Object Oriented Programming (OOP)
-                </span>
-              </div>
-            </div>
-
-            <div className={styles["education__content"]}>
-              <div>
-                <h3 className={styles["education__year"]}>2020</h3>
-                <span className={styles["education__university"]}>
-                  Digital Innovation One
-                </span>
-              </div>
-
-              <div className={styles["education__time"]}>
-                <span className={styles["education__rounder"]}></span>
-                <span className={styles["education__line"]}></span>
-              </div>
-
-              <div>
-                <h3 className={styles["education__race"]}>
-                  Course Certificate
-                </h3>
-                <span className={styles["education__specialty"]}>
-                  Programming Logic
-                </span>
-              </div>
-            </div>
+          <div
+            className={`${styles["education__container"]} ${styles["bd-grid"]}`}
+          >
+            <Education
+              year={2022}
+              institute="Hacker Rank"
+              course="CSS Certification"
+            />
+            <Education
+              year={2020}
+              institute="Digital Innovation One"
+              course="HTML Web Developer (BootCamp)"
+            />
+            <Education
+              year={2019}
+              institute="Politecnico de Benguela"
+              course="Eletronica Industrial e Automacao"
+            />
           </div>
         </section>
 
-        <section className={`${styles["services"]} ${styles['section']}`} id="services">
+        <section
+          className={`${styles["services"]} ${styles["section"]}`}
+          id="services"
+        >
           <span className={styles["section-subtitle"]}>What I Offer</span>
           <h2 className={styles["section-title"]}>My Services</h2>
 
-          <div className={`${styles["services__container"]} ${styles['bd-grid']}`}>
-      
-            <ServiceCard icon={<ImWordpress />}/>
-            <ServiceCard icon={<ImWordpress />}/>
-            <ServiceCard icon={<ImWordpress />}/>
+          <div
+            className={`${styles["services__container"]} ${styles["bd-grid"]}`}
+          >
+            <ServiceCard
+              icon={<MdMonitor />}
+              title="Frontend Development"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+            />
+
+            <ServiceCard
+              icon={<FiServer />}
+              title="Backend Development"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+            />
+
+            <ServiceCard
+              icon={<ImWordpress />}
+              title="Wordpress Development"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+            />
+
+            <ServiceCard
+              icon={<FaPencilAlt />}
+              title="Content Writer"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
+            />
           </div>
         </section>
 
-        <section className={`${styles['project']} ${styles['section']}`}>
-          <div className={`${styles['project__container']} ${styles['bd-grid']}`}>
+        <section className={`${styles["project"]} ${styles["section"]}`}>
+          <div
+            className={`${styles["project__container"]} ${styles["bd-grid"]}`}
+          >
             <div className={styles["project__data"]}>
-              <h2 className={`${styles['section-title']} ${styles['project__title']}`}>
+              <h2
+                className={`${styles["section-title"]} ${styles["project__title"]}`}
+              >
                 Do you have a job opportunity for me?
               </h2>
               <p className={styles["project__description"]}>
                 I am a newbie and looking to be adopted by a software company,
                 if you are interested in me, please tell me anything.
               </p>
-              <a href="#contact" className={`${styles['button']} ${styles['button__light']}`}>
+              <a
+                href="#contact"
+                className={`${styles["button"]} ${styles["button__light"]}`}
+              >
                 Contact Me
               </a>
             </div>
 
             <img
-              src="https://source.unsplash.com/random"
+              src={oportunity}
               alt=""
               className={styles["project__img"]}
             />
           </div>
         </section>
 
-        <section className={`${styles['works']} ${styles['section']}`} id="works">
+        <section
+          className={`${styles["works"]} ${styles["section"]}`}
+          id="works"
+        >
           <span className={styles["section-subtitle"]}>My Portfolio</span>
           <h2 className={styles["section-title"]}>Some Projects</h2>
 
           <div className={`${styles["works__container"]} ${styles["bd-grid"]}`}>
-
-            <WorksCard />
-            <WorksCard />
-            <WorksCard />
+            <WorksCard
+              link="https://google.com"
+              title="Project"
+              bgPath={work1}
+            />
+            
+            <WorksCard
+              link="https://google.com"
+              title="Project"
+              bgPath={work1}
+            />
+            
+            <WorksCard
+              link="https://google.com"
+              title="Project"
+              bgPath={work1}
+            />
+            
           </div>
         </section>
 
-        <section className={`${styles['contact']} ${styles['section']}`} id="contact">
+        <section
+          className={`${styles["contact"]} ${styles["section"]}`}
+          id="contact"
+        >
           <span className={styles["section-subtitle"]}>Contact Me</span>
           <h2 className={styles["section-title"]}>Get In Touch</h2>
 
-          <div className={`${styles['contact__container']} ${styles['bd-grid']}`}>
+          <div
+            className={`${styles["contact__container"]} ${styles["bd-grid"]}`}
+          >
             <form
               action="https://formsubmit.co/elladioclaudio@gmail.com"
               method="POST"
@@ -333,14 +352,14 @@ export function Home() {
                   type="text"
                   placeholder="Name"
                   name="name"
-                  className={`${styles['contact__input']} ${styles['textValue']}`}
+                  className={`${styles["contact__input"]} ${styles["textValue"]}`}
                   required
                 />
                 <input
                   type="email"
                   placeholder="Email"
                   name="email"
-                  className={`${styles['contact__input']} ${styles['textValue']}`}
+                  className={`${styles["contact__input"]} ${styles["textValue"]}`}
                   required
                 />
               </div>
@@ -356,7 +375,7 @@ export function Home() {
                 cols="0"
                 rows="10"
                 placeholder="Message"
-                className={`${styles['contact__input']} ${styles['textValue']}`}
+                className={`${styles["contact__input"]} ${styles["textValue"]}`}
               ></textarea>
 
               <input type="hidden" name="_captcha" value="false" />
@@ -374,7 +393,7 @@ export function Home() {
               <button
                 type="submit"
                 value="Send Message"
-                className={`${styles['button']} ${styles['contact__button']}`}
+                className={`${styles["button"]} ${styles["contact__button"]}`}
               >
                 Send
               </button>
