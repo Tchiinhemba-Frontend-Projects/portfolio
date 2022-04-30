@@ -15,6 +15,7 @@ import oportunity from "../../assets/images/oportunity.png";
 import work1 from "../../assets/images/work1.jpeg";
 import work2 from "../../assets/images/work2.jpeg";
 import work3 from "../../assets/images/work3.jpeg";
+import work3 from "../../assets/images/work3.jpeg";
 
 export function Home() {
   useEffect(() => {
