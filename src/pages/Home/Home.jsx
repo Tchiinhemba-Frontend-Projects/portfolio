@@ -15,7 +15,7 @@ import oportunity from "../../assets/images/oportunity.png";
 import work1 from "../../assets/images/work1.jpeg";
 import work2 from "../../assets/images/work2.jpeg";
 import work3 from "../../assets/images/work3.jpeg";
-import work3 from "../../assets/images/work3.jpeg";
+import work4 from "../../assets/images/work4.jpeg";
 
 export function Home() {
   useEffect(() => {
@@ -125,46 +125,50 @@ export function Home() {
                 </h3>
 
                 <div className={styles["about__information-data"]}>
-                  <MdVerified className={styles["about__information-icon"]} />
+                <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      2 anos como freelancer
+                      Desenvolvedor Web
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
                     >
-                      Experiência
+                      Grupo Zwela (atual)
                     </span>
                   </div>
                 </div>
 
-                {/* <div className={styles["about__information-data"]}>
-                  <MdVerified className={styles["about__information-icon"]} />
-                  <div>
-                    <span className={styles["about__information-subtitle"]}>
-                      3 Projects
-                    </span>
-                    <span
-                      className={styles["about__information-subtitle-small"]}
-                    >
-                      Completed
-                    </span>
-                  </div>
-                </div> */}
+
 
                 <div className={styles["about__information-data"]}>
-                  <BiMedal className={styles["about__information-icon"]} />
+                <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      8 Meses como Dev Frontend
+                      Desenvolvedor Frontend
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
                     >
-                      na Bukaapp
+                      Bukaapp - 8 meses
                     </span>
                   </div>
                 </div>
+
+
+                <div className={styles["about__information-data"]}>
+                  <MdVerified className={styles["about__information-icon"]} />
+                  <div>
+                    <span className={styles["about__information-subtitle"]}>
+                      Freelancer
+                    </span>
+                    <span
+                      className={styles["about__information-subtitle-small"]}
+                    >
+                      2 anos como freelancer
+                    </span>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -324,6 +328,12 @@ export function Home() {
               link="https://miriabar.netlify.app/"
               title="Menu Digital"
               bgPath={work3}
+            />
+
+            <WorksCard
+              link="https://jovemmulher.com"
+              title="Blog"
+              bgPath={work4}
             />
           </div>
         </section>
