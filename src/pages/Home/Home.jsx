@@ -160,7 +160,7 @@ export function Home() {
                     <span
                       className={styles["about__information-subtitle-small"]}
                     >
-                      4 anos como freelancer
+                      3 anos como freelancer
                     </span>
                   </div>
                 </div>
