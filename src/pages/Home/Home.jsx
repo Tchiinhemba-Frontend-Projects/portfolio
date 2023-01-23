@@ -47,59 +47,59 @@ export function Home() {
       tittle: "Targeting"
     },
     {
-      link: "https://gomedia.co.ao",
-      image: work2,
-      tittle: "Gomedia"
-    },
-    {
-      link: "https://sanlam.ao",
-      image: work3,
-      tittle: "Sanlam"
-    },
-    {
-      link: "https://imosol.co.ao",
-      image: work4,
-      tittle: "Imosol"
-    },
-    {
-      link: "https://notadigital.company",
-      image: work5,
-      tittle: "NOT"
-    },
-    {
-      link: "https://kixicredito.ao",
-      image: work6,
-      tittle: "Kixicredito"
-    },
-    {
-      link: "https://kyndalla.com",
-      image: work7,
-      tittle: "Kyndalla"
-    },
-    {
-      link: "https://economia.tech",
-      image: work8,
-      tittle: "Economia"
-    },
-    {
-      link: "https://bigonepatriota.ao",
-      image: work9,
-      tittle: "Big One Patriota"
-    },
-    {
       link: "https://stenifarma.ao",
-      image: work10,
+      image: work2,
       tittle: "Stenifarma"
     },
     {
-      link: "https://somosmikos.ao",
-      image: work11,
+      link: "https://somosmikos.com",
+      image: work3,
       tittle: "Mikos"
     },
     {
       link: "https://oxygen-dun.vercel.app",
+      image: work4,
+      tittle: "Oxigen"
+    },
+    {
+      link: "https://gomedia.co.ao/inicio",
+      image: work5,
+      tittle: "Gomedia"
+    },
+    {
+      link: "https://sanlam.ao",
+      image: work6,
+      tittle: "Sanlam"
+    },
+    {
+      link: "https://imosol.co.ao",
+      image: work7,
+      tittle: "Imosol"
+    },
+    {
+      link: "https://notadigital.company",
+      image: work8,
+      tittle: "NOT"
+    },
+    {
+      link: "https://kixicredito.ao",
+      image: work9,
+      tittle: "Kixicredito"
+    },
+    {
+      link: "https://kyndalla.com",
+      image: work10,
+      tittle: "Kyndalla"
+    },
+    {
+      link: "https://economia.tech",
+      image: work11,
+      tittle: "economia.tech"
+    },
+    {
+      link: "https://bigonepatriota.ao",
       image: work12,
-      tittle: "Oxygen"
+      tittle: "Big One Patriota"
     }, 
   ]
 
