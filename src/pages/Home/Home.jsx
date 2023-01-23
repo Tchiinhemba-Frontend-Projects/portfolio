@@ -9,13 +9,23 @@ import { ImWordpress } from "react-icons/im";
 import { BsMedium } from "react-icons/bs";
 
 import { Education, ServiceCard, Skill, WorksCard } from "../../components";
-import profile from "../../assets/images/profile.jpg";
+import profile from "../../assets/images/profile.jpeg";
+import profile2 from "../../assets/images/profile2.jpeg";
 import oportunity from "../../assets/images/oportunity.png";
 
-import work1 from "../../assets/images/work1.jpeg";
-import work2 from "../../assets/images/work2.jpeg";
-import work3 from "../../assets/images/work3.jpeg";
-import work4 from "../../assets/images/work4.jpeg";
+import work1 from "../../assets/images/work1.png";
+import work2 from "../../assets/images/work2.png";
+import work3 from "../../assets/images/work3.png";
+import work4 from "../../assets/images/work4.png";
+import work5 from "../../assets/images/work5.png";
+import work6 from "../../assets/images/work6.png";
+import work7 from "../../assets/images/work7.png";
+import work8 from "../../assets/images/work8.png";
+import work9 from "../../assets/images/work9.png";
+import work10 from "../../assets/images/work10.png";
+import work11 from "../../assets/images/work11.png";
+import work12 from "../../assets/images/work12.png";
+
 
 export function Home() {
   useEffect(() => {
@@ -29,6 +39,69 @@ export function Home() {
   }, []);
 
   const age = new Date().getFullYear() - 2000;
+
+  let projects = [
+    {
+      link: "https://targeting.ao",
+      image: work1,
+      tittle: "Targeting"
+    },
+    {
+      link: "https://gomedia.co.ao",
+      image: work2,
+      tittle: "Gomedia"
+    },
+    {
+      link: "https://sanlam.ao",
+      image: work3,
+      tittle: "Sanlam"
+    },
+    {
+      link: "https://imosol.co.ao",
+      image: work4,
+      tittle: "Imosol"
+    },
+    {
+      link: "https://notadigital.company",
+      image: work5,
+      tittle: "NOT"
+    },
+    {
+      link: "https://kixicredito.ao",
+      image: work6,
+      tittle: "Kixicredito"
+    },
+    {
+      link: "https://kyndalla.com",
+      image: work7,
+      tittle: "Kyndalla"
+    },
+    {
+      link: "https://economia.tech",
+      image: work8,
+      tittle: "Economia"
+    },
+    {
+      link: "https://bigonepatriota.ao",
+      image: work9,
+      tittle: "Big One Patriota"
+    },
+    {
+      link: "https://stenifarma.ao",
+      image: work10,
+      tittle: "Stenifarma"
+    },
+    {
+      link: "https://somosmikos.ao",
+      image: work11,
+      tittle: "Mikos"
+    },
+    {
+      link: "https://oxygen-dun.vercel.app",
+      image: work12,
+      tittle: "Oxygen"
+    }, 
+  ]
 
   return (
     <React.Fragment>
@@ -94,7 +167,7 @@ export function Home() {
                 coisas novas, enfrentar novos desafios e focado em construir uma
                 carreira de sucesso.
               </p>
-              <img src={profile} alt="" className={styles["about__img"]} />
+              <img src={profile2} alt="" className={styles["about__img"]} />
             </div>
 
             <div>
@@ -125,7 +198,7 @@ export function Home() {
                 </h3>
 
                 <div className={styles["about__information-data"]}>
-                <MdVerified className={styles["about__information-icon"]} />
+                  <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
                       Desenvolvedor Web
@@ -138,10 +211,8 @@ export function Home() {
                   </div>
                 </div>
 
-
-
                 <div className={styles["about__information-data"]}>
-                <MdVerified className={styles["about__information-icon"]} />
+                  <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
                       Desenvolvedor Frontend
@@ -154,7 +225,6 @@ export function Home() {
                   </div>
                 </div>
 
-
                 <div className={styles["about__information-data"]}>
                   <MdVerified className={styles["about__information-icon"]} />
                   <div>
@@ -164,11 +234,10 @@ export function Home() {
                     <span
                       className={styles["about__information-subtitle-small"]}
                     >
-                      2 anos como freelancer
+                      4 anos como freelancer
                     </span>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -187,9 +256,9 @@ export function Home() {
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Frontend</h3>
 
-              <Skill nameSkill="react.js" xp={58} />
-              <Skill nameSkill="javascript" xp={69} />
-              <Skill nameSkill="css/sass" xp={80} />
+              <Skill nameSkill="HTML/CSS" xp={92} />
+              <Skill nameSkill="javascript" xp={79} />
+              <Skill nameSkill="React.js" xp={60} />
               <Skill nameSkill="react native" xp={25} />
             </div>
 
@@ -203,7 +272,7 @@ export function Home() {
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>WordPress</h3>
-              <Skill nameSkill="Plataforma Wordpress" xp={80} />
+              <Skill nameSkill="Plataforma Wordpress" xp={90} />
               <Skill nameSkill="Google Analytics" xp={70} />
               <Skill nameSkill="Woocommerce" xp={80} />
               <Skill nameSkill="Ads" xp={40} />
@@ -211,8 +280,9 @@ export function Home() {
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Outras</h3>
-              <Skill nameSkill="Resolução de problemas" xp={70} />
-              <Skill nameSkill="Comunicação" xp={90} />
+              <Skill nameSkill="SEO" xp={60} />
+              <Skill nameSkill="Newsletter" xp={60} />
+              <Skill nameSkill="Servidores Linux" xp={54} />
             </div>
           </div>
         </section>
@@ -224,6 +294,7 @@ export function Home() {
           <div
             className={`${styles["education__container"]} ${styles["bd-grid"]}`}
           >
+
             <Education
               year={2022}
               institute="Hacker Rank"
@@ -312,29 +383,15 @@ export function Home() {
           <h2 className={styles["section-title"]}>Alguns Projetos</h2>
 
           <div className={`${styles["works__container"]} ${styles["bd-grid"]}`}>
-            <WorksCard
-              link="https://lipwane.ao/"
-              title="Ecommerce"
-              bgPath={work1}
-            />
-
-            <WorksCard
-              link="https://nature-angola.vercel.app/"
-              title="Landingpage"
-              bgPath={work2}
-            />
-
-            <WorksCard
-              link="https://miriabar.netlify.app/"
-              title="Menu Digital"
-              bgPath={work3}
-            />
-
-            <WorksCard
-              link="https://jovemmulher.com"
-              title="Blog"
-              bgPath={work4}
-            />
+            {projects.map((value, index) => {
+              return (
+                <WorksCard
+                  link={value.link}
+                  title={value.tittle}
+                  bgPath={value.image}
+                />
+              );
+            })}
           </div>
         </section>
 
