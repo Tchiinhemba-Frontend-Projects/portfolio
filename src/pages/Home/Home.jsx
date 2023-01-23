@@ -9,7 +9,8 @@ import { ImWordpress } from "react-icons/im";
 import { BsMedium } from "react-icons/bs";
 
 import { Education, ServiceCard, Skill, WorksCard } from "../../components";
-import profile from "../../assets/images/profile.jpg";
+import profile from "../../assets/images/profile.jpeg";
+import profile2 from "../../assets/images/profile2.jpeg";
 import oportunity from "../../assets/images/oportunity.png";
 
 import work1 from "../../assets/images/work1.png";
@@ -166,7 +167,7 @@ export function Home() {
                 coisas novas, enfrentar novos desafios e focado em construir uma
                 carreira de sucesso.
               </p>
-              <img src={profile} alt="" className={styles["about__img"]} />
+              <img src={profile2} alt="" className={styles["about__img"]} />
             </div>
 
             <div>
@@ -233,7 +234,7 @@ export function Home() {
                     <span
                       className={styles["about__information-subtitle-small"]}
                     >
-                      2 anos como freelancer
+                      4 anos como freelancer
                     </span>
                   </div>
                 </div>
@@ -255,9 +256,9 @@ export function Home() {
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Frontend</h3>
 
-              <Skill nameSkill="react.js" xp={58} />
-              <Skill nameSkill="javascript" xp={69} />
-              <Skill nameSkill="css/sass" xp={80} />
+              <Skill nameSkill="HTML/CSS" xp={92} />
+              <Skill nameSkill="javascript" xp={79} />
+              <Skill nameSkill="React.js" xp={60} />
               <Skill nameSkill="react native" xp={25} />
             </div>
 
@@ -271,7 +272,7 @@ export function Home() {
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>WordPress</h3>
-              <Skill nameSkill="Plataforma Wordpress" xp={80} />
+              <Skill nameSkill="Plataforma Wordpress" xp={90} />
               <Skill nameSkill="Google Analytics" xp={70} />
               <Skill nameSkill="Woocommerce" xp={80} />
               <Skill nameSkill="Ads" xp={40} />
@@ -279,8 +280,9 @@ export function Home() {
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Outras</h3>
-              <Skill nameSkill="Resolução de problemas" xp={70} />
-              <Skill nameSkill="Comunicação" xp={90} />
+              <Skill nameSkill="SEO" xp={60} />
+              <Skill nameSkill="Newsletter" xp={60} />
+              <Skill nameSkill="Servidores Linux" xp={54} />
             </div>
           </div>
         </section>
@@ -292,6 +294,7 @@ export function Home() {
           <div
             className={`${styles["education__container"]} ${styles["bd-grid"]}`}
           >
+
             <Education
               year={2022}
               institute="Hacker Rank"
