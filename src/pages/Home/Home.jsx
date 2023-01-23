@@ -9,23 +9,10 @@ import { ImWordpress } from "react-icons/im";
 import { BsMedium } from "react-icons/bs";
 
 import { Education, ServiceCard, Skill, WorksCard } from "../../components";
+import { FrontendContent } from "../../api";
 import profile from "../../assets/images/profile.jpeg";
 import profile2 from "../../assets/images/profile2.jpeg";
 import oportunity from "../../assets/images/oportunity.png";
-
-import work1 from "../../assets/images/work1.png";
-import work2 from "../../assets/images/work2.png";
-import work3 from "../../assets/images/work3.png";
-import work4 from "../../assets/images/work4.png";
-import work5 from "../../assets/images/work5.png";
-import work6 from "../../assets/images/work6.png";
-import work7 from "../../assets/images/work7.png";
-import work8 from "../../assets/images/work8.png";
-import work9 from "../../assets/images/work9.png";
-import work10 from "../../assets/images/work10.png";
-import work11 from "../../assets/images/work11.png";
-import work12 from "../../assets/images/work12.png";
-
 
 export function Home() {
   useEffect(() => {
@@ -40,68 +27,7 @@ export function Home() {
 
   const age = new Date().getFullYear() - 2000;
 
-  let projects = [
-    {
-      link: "https://targeting.ao",
-      image: work1,
-      tittle: "Targeting"
-    },
-    {
-      link: "https://stenifarma.ao",
-      image: work2,
-      tittle: "Stenifarma"
-    },
-    {
-      link: "https://somosmikos.com",
-      image: work3,
-      tittle: "Mikos"
-    },
-    {
-      link: "https://oxygen-dun.vercel.app",
-      image: work4,
-      tittle: "Oxigen"
-    },
-    {
-      link: "https://gomedia.co.ao/inicio",
-      image: work5,
-      tittle: "Gomedia"
-    },
-    {
-      link: "https://sanlam.ao",
-      image: work6,
-      tittle: "Sanlam"
-    },
-    {
-      link: "https://imosol.co.ao",
-      image: work7,
-      tittle: "Imosol"
-    },
-    {
-      link: "https://notadigital.company",
-      image: work8,
-      tittle: "NOT"
-    },
-    {
-      link: "https://kixicredito.ao",
-      image: work9,
-      tittle: "Kixicredito"
-    },
-    {
-      link: "https://kyndalla.com",
-      image: work10,
-      tittle: "Kyndalla"
-    },
-    {
-      link: "https://economia.tech",
-      image: work11,
-      tittle: "economia.tech"
-    },
-    {
-      link: "https://bigonepatriota.ao",
-      image: work12,
-      tittle: "Big One Patriota"
-    }, 
-  ]
+  const { worksList, certification } = FrontendContent();
 
   return (
     <React.Fragment>
@@ -294,22 +220,15 @@ export function Home() {
           <div
             className={`${styles["education__container"]} ${styles["bd-grid"]}`}
           >
-
-            <Education
-              year={2022}
-              institute="Hacker Rank"
-              course="Certificação CSS"
-            />
-            <Education
-              year={2020}
-              institute="Digital Innovation One"
-              course="Desenvolvedor Web (BootCamp)"
-            />
-            <Education
-              year={2019}
-              institute="Politécnico de Benguela"
-              course="Eletrônica Industrial e Automação"
-            />
+            {certification.map((value, index) => {
+              return (
+                <Education
+                  year={value.year}
+                  institute={value.institute}
+                  course={value.tittle}
+                />
+              );
+            })}
           </div>
         </section>
 
@@ -383,7 +302,7 @@ export function Home() {
           <h2 className={styles["section-title"]}>Alguns Projetos</h2>
 
           <div className={`${styles["works__container"]} ${styles["bd-grid"]}`}>
-            {projects.map((value, index) => {
+            {worksList.map((value, index) => {
               return (
                 <WorksCard
                   link={value.link}
