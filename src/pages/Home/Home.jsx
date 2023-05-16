@@ -1,12 +1,20 @@
 import React, { useEffect } from "react";
 import styles from "./Home.module.scss";
-import { AiFillGithub, AiFillPhone } from "react-icons/ai";
-import { BiEnvelope, BiMedal } from "react-icons/bi";
-import { FiServer } from "react-icons/fi";
-import { MdMonitor, MdVerified } from "react-icons/md";
-import { FaLinkedinIn, FaPencilAlt, FaUserCircle } from "react-icons/fa";
-import { ImWordpress } from "react-icons/im";
-import { BsMedium } from "react-icons/bs";
+import {
+  AiFillGithub,
+  AiFillPhone,
+  BiEnvelope,
+  BiMedal,
+  FiServer,
+  MdVerified,
+  MdMonitor,
+  FaLinkedinIn,
+  FaPencilAlt,
+  FaUserCircle,
+  ImWordpress,
+  BsMedium
+} from "react-icons/all";
+
 
 import { Education, ServiceCard, Skill, WorksCard } from "../../components";
 import { FrontendContent } from "../../api";

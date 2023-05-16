@@ -12,6 +12,7 @@ import work9 from "../assets/images/work9.png";
 import work10 from "../assets/images/work10.png";
 import work11 from "../assets/images/work11.png";
 import work12 from "../assets/images/work12.png";
+import work13 from "../assets/images/work13.png";
 
 
 
@@ -77,6 +78,11 @@ export function FrontendContent() {
         link: "https://bigonepatriota.ao",
         image: work12,
         tittle: "Big One Patriota",
+      },
+      {
+        link: "https://maxnet.ao",
+        image: work13,
+        tittle: "Maxnet",
       },
     ],
     certification: [
