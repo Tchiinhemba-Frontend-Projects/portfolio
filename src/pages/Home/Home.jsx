@@ -198,7 +198,7 @@ export function Home() {
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Backend</h3>
 
-              <Skill nameSkill="node.js" xp={4} />
+              <Skill nameSkill="node.js" xp={1} />
               <Skill nameSkill="mongodb" xp={1} />
               <Skill nameSkill="express" xp={1} />
             </div>
@@ -216,6 +216,8 @@ export function Home() {
               <Skill nameSkill="SEO" xp={1} />
               <Skill nameSkill="Newsletter" xp={2} />
               <Skill nameSkill="Servidores Linux" xp={3} />
+              <Skill nameSkill="Git" xp={5} />
+              <Skill nameSkill="Github" xp={5} />
             </div>
           </div>
         </section>
