@@ -25,44 +25,44 @@ export function FrontendContent() {
         tittle: "Targeting",
       },
       {
-        link: "https://stenifarma.ao",
+        link: "https://mellcosmetics.ao",
         image: work2,
-        tittle: "Stenifarma",
+        tittle: "MellCosmetics",
       },
       {
-        link: "https://somosmikos.com",
+        link: "https://mulheres.ao",
         image: work3,
-        tittle: "Mikos",
+        tittle: "Mulheres",
       },
       {
-        link: "https://oxygen-dun.vercel.app",
+        link: "https://expressers.ao",
         image: work4,
-        tittle: "Oxigen",
-      },
-      {
-        link: "https://gomedia.co.ao/inicio",
-        image: work5,
-        tittle: "Gomedia",
-      },
-      {
-        link: "https://sanlam.ao",
-        image: work6,
-        tittle: "Sanlam",
-      },
-      {
-        link: "https://imosol.co.ao",
-        image: work7,
-        tittle: "Imosol",
+        tittle: "Expressers",
       },
       {
         link: "https://notadigital.company",
-        image: work8,
+        image: work5,
         tittle: "NOT",
       },
       {
-        link: "https://kixicredito.ao",
+        link: "https://baller.ao",
+        image: work6,
+        tittle: "Baller",
+      },
+      {
+        link: "https://impelir.ao",
+        image: work7,
+        tittle: "Impelir",
+      },
+      {
+        link: "https://somosmikos.com",
+        image: work8,
+        tittle: "Mikos",
+      },
+      {
+        link: "https://tchiinhemba.ao",
         image: work9,
-        tittle: "Kixicredito",
+        tittle: "Portfolio",
       },
       {
         link: "https://kyndalla.com",
