@@ -377,7 +377,7 @@ export function Home() {
               <input
                 type="hidden"
                 name="_next"
-                value="https://tchiinhemba.vercel.app/thank"
+                value="https://tchiinhemba.com/thank"
               />
 
               <button
