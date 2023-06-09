@@ -1,39 +1,34 @@
-
-
 .bd-grid {
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100%;
-    column-gap: 2rem;
-    width: calc(100% - 2rem);
-    margin-left: $mb-2;
-    margin-right: $mb-2;
-  }
-
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: $mb-2;
+  margin-right: $mb-2;
+}
 
 /*================ CLASS CSS ===================*/
 
 .section {
-    padding: 4rem 0 2rem;
-  }
-  
-  .section-title {
-    font-size: $h1-font-size;
-    color: $first-color;
-    margin-bottom: $mb-3;
-    text-align: center;
-  }
-  
-  .section-subtitle {
-    display: block;
-    font-size: $small-font-size;
-    color: $first-color-darken;
-    text-align: center;
-    font-weight: $font-bold;
-    margin-bottom: .25rem;
-  }
+  padding: 4rem 0 2rem;
+}
 
+.section-title {
+  font-size: $h1-font-size;
+  color: $first-color;
+  margin-bottom: $mb-3;
+  text-align: center;
+}
 
+.section-subtitle {
+  display: block;
+  font-size: $small-font-size;
+  color: $first-color-darken;
+  text-align: center;
+  font-weight: $font-bold;
+  margin-bottom: 0.25rem;
+}
 
 /* ====== HOME ====== */
 .home__container {
@@ -189,7 +184,6 @@
   row-gap: 2rem;
 }
 
-
 /* =========== SERVICES ========= */
 .services__container {
   row-gap: 2rem;
@@ -228,7 +222,6 @@
   justify-items: center;
   row-gap: 2rem;
 }
-
 
 /* ====== CONTACT ===== */
 .contact__container {
@@ -347,7 +340,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .home__container {
     height: 100vh;
   }

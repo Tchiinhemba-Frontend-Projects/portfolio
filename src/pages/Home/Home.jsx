@@ -12,9 +12,8 @@ import {
   FaPencilAlt,
   FaUserCircle,
   ImWordpress,
-  BsMedium
+  BsMedium,
 } from "react-icons/all";
-
 
 import { Education, ServiceCard, Skill, WorksCard } from "../../components";
 import { FrontendContent } from "../../api";
@@ -190,33 +189,33 @@ export function Home() {
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Frontend</h3>
 
-              <Skill nameSkill="HTML/CSS" xp={92} />
-              <Skill nameSkill="javascript" xp={79} />
-              <Skill nameSkill="React.js" xp={60} />
-              <Skill nameSkill="react native" xp={25} />
+              <Skill nameSkill="HTML/CSS" xp={5} />
+              <Skill nameSkill="javascript" xp={3} />
+              <Skill nameSkill="React.js" xp={2} />
+              <Skill nameSkill="react native" xp={1} />
             </div>
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Backend</h3>
 
-              <Skill nameSkill="node.js" xp={40} />
-              <Skill nameSkill="mongodb" xp={28} />
-              <Skill nameSkill="express" xp={38} />
+              <Skill nameSkill="node.js" xp={4} />
+              <Skill nameSkill="mongodb" xp={1} />
+              <Skill nameSkill="express" xp={1} />
             </div>
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>WordPress</h3>
-              <Skill nameSkill="Plataforma Wordpress" xp={90} />
-              <Skill nameSkill="Google Analytics" xp={70} />
-              <Skill nameSkill="Woocommerce" xp={80} />
-              <Skill nameSkill="Ads" xp={40} />
+              <Skill nameSkill="Plataforma Wordpress" xp={2} />
+              <Skill nameSkill="Google Analytics" xp={2} />
+              <Skill nameSkill="Woocommerce" xp={2} />
+              <Skill nameSkill="Ads" xp={2} />
             </div>
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Outras</h3>
-              <Skill nameSkill="SEO" xp={60} />
-              <Skill nameSkill="Newsletter" xp={60} />
-              <Skill nameSkill="Servidores Linux" xp={54} />
+              <Skill nameSkill="SEO" xp={1} />
+              <Skill nameSkill="Newsletter" xp={2} />
+              <Skill nameSkill="Servidores Linux" xp={3} />
             </div>
           </div>
         </section>

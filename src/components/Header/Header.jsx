@@ -77,17 +77,29 @@ export function Header(props) {
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#services" className={`${styles["nav__link"]}`} onClick={() => show()}>
-                Serviços
+                <a
+                  href="#services"
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
+                >
+                  Serviços
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#works" className={`${styles["nav__link"]}`} onClick={() => show()}>
+                <a
+                  href="#works"
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
+                >
                   Projectos
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#contact" className={`${styles["nav__link"]}`} onClick={() => show()}>
+                <a
+                  href="#contact"
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
+                >
                   Contacto
                 </a>
               </li>
