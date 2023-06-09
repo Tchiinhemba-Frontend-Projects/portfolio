@@ -162,12 +162,12 @@ export function Home() {
                   <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      Freelancer
+                      Expressers
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
                     >
-                      3 anos como freelancer
+                      Founder
                     </span>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export function Home() {
             <ServiceCard
               icon={<MdMonitor />}
               title="Desenvolvedor Frontend"
-              description="Crio sites estáticos e responsivos com HTML, CSS, JavaScript, etc..."
+              description="Crio sites e aplicações web responsivas com a tecnologia React"
             />
 
             <ServiceCard
