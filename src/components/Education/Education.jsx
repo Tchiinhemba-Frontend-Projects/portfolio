@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Education.module.scss";
 
 export function Education(props) {
-  const { year, institute, course } = props;
+  const { year, institute, course, title } = props;
   return (
     <div className={styles["education__content"]}>
       <div>
@@ -17,7 +17,7 @@ export function Education(props) {
       </div>
 
       <div>
-        <h3 className={styles["education__race"]}>Curso Ou Certificação</h3>
+        <h3 className={styles["education__race"]}>{title}</h3>
         <span className={styles["education__specialty"]}>{course}</span>
       </div>
     </div>

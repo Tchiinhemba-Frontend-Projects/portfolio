@@ -55,7 +55,7 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Início
+                  Home
                 </a>
               </li>
               <li className={styles["nav__item"]}>
@@ -64,7 +64,7 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Sobre
+                  About
                 </a>
               </li>
               <li className={styles["nav__item"]}>
@@ -73,22 +73,34 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Habilidades
+                  Skills
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#services" className={`${styles["nav__link"]}`} onClick={() => show()}>
-                Serviços
+                <a
+                  href="#services"
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
+                >
+                  Services
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#works" className={`${styles["nav__link"]}`} onClick={() => show()}>
-                  Projectos
+                <a
+                  href="#works"
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
+                >
+                  Works
                 </a>
               </li>
               <li className={styles["nav__item"]}>
-                <a href="#contact" className={`${styles["nav__link"]}`} onClick={() => show()}>
-                  Contacto
+                <a
+                  href="#contact"
+                  className={`${styles["nav__link"]}`}
+                  onClick={() => show()}
+                >
+                  Contact Me
                 </a>
               </li>
             </ul>

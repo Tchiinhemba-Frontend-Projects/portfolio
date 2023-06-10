@@ -1,5 +1,3 @@
-
-
 import work1 from "../assets/images/work1.png";
 import work2 from "../assets/images/work2.png";
 import work3 from "../assets/images/work3.png";
@@ -13,8 +11,6 @@ import work10 from "../assets/images/work10.png";
 import work11 from "../assets/images/work11.png";
 import work12 from "../assets/images/work12.png";
 import work13 from "../assets/images/work13.png";
-
-
 
 export function FrontendContent() {
   return {
@@ -89,18 +85,21 @@ export function FrontendContent() {
       {
         year: "2022",
         institute: "Hacker Rank",
-        tittle: "Certificação Css"
+        tittle: "CSS certification",
+        diploma: "Certificate"
       },
       {
         year: "2020",
         institute: "Digital Innovation One",
-        tittle: "Desenvolvedor Web (BootCamp)"
+        tittle: "Web Development (BootCamp)",
+        diploma: "certificate of completion"
       },
       {
         year: "2019",
-        institute: "Politécnico de Benguela",
-        tittle: "Eletrônica Industrial e Automação"
+        institute: "Benguela Polytechnic",
+        tittle: "Industrial Electronics and Automation",
+        diploma: "Diploma"
       },
-    ]
+    ],
   };
 }

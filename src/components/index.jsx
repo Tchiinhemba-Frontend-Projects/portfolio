@@ -3,4 +3,4 @@ export { Footer } from "./Footer";
 export { ServiceCard } from "./ServiceCard";
 export { WorksCard } from "./WorksCard";
 export { Skill } from "./Skill";
-export {Education} from './Education';
+export { Education } from "./Education";
