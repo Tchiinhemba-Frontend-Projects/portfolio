@@ -85,17 +85,20 @@ export function FrontendContent() {
       {
         year: "2022",
         institute: "Hacker Rank",
-        tittle: "Certificação Css",
+        tittle: "CSS certification",
+        diploma: "Certificate"
       },
       {
         year: "2020",
         institute: "Digital Innovation One",
-        tittle: "Desenvolvedor Web (BootCamp)",
+        tittle: "Web Development (BootCamp)",
+        diploma: "certificate of completion"
       },
       {
         year: "2019",
-        institute: "Politécnico de Benguela",
-        tittle: "Eletrônica Industrial e Automação",
+        institute: "Benguela Polytechnic",
+        tittle: "Industrial Electronics and Automation",
+        diploma: "Diploma"
       },
     ],
   };

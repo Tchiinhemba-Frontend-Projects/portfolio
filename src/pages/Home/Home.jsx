@@ -48,7 +48,7 @@ export function Home() {
 
               <h1 className={styles["home__title"]}>Eládio Tchiinhemba</h1>
               <span className={styles["home__profession"]}>
-                Desenvolvedor de software
+                Software Developer
               </span>
 
               <div className={styles["home__social"]}>
@@ -79,7 +79,7 @@ export function Home() {
                 href="assets/pdf/Resume-Eládio-Cláudio.pdf"
                 className={` ${styles["button"]} ${styles["home__button"]}`}
               >
-                Descarregar Currículo
+                Download Resume
               </a>
             </div>
           </div>
@@ -89,16 +89,16 @@ export function Home() {
           className={`${styles["about"]} ${styles["section"]}`}
           id="about"
         >
-          <span className={styles["section-subtitle"]}>Minha Introdução</span>
-          <h2 className={styles["section-title"]}>Sobre Mim</h2>
+          <span className={styles["section-subtitle"]}>My intro</span>
+          <h2 className={styles["section-title"]}>About Me</h2>
 
           <div className={`${styles["about__container"]} ${styles["bd-grid"]}`}>
             <div className={styles["about__data"]}>
               <p className={styles["about__description"]}>
-                Olá eu sou o Eládio, um jovem de {age} anos, amante de
-                tecnologia, curioso e autodidata. Sempre dispostos a aprender
-                coisas novas, enfrentar novos desafios e focado em construir uma
-                carreira de sucesso.
+                Hello, I'm Eladio, a young man of {age} years, lover of
+                technology, curious and self-taught. always willing to learn new
+                things, facing new challenges and focused on building a
+                successful career.
               </p>
               <img src={profile2} alt="" className={styles["about__img"]} />
             </div>
@@ -106,7 +106,7 @@ export function Home() {
             <div>
               <div className={styles["about__information"]}>
                 <h3 className={styles["about__information-title"]}>
-                  Informação
+                  Information
                 </h3>
 
                 <div className={styles["about__information-data"]}>
@@ -127,19 +127,19 @@ export function Home() {
 
               <div className={styles["about__information"]}>
                 <h3 className={styles["about__information-title"]}>
-                  Experiência
+                  Experience
                 </h3>
 
                 <div className={styles["about__information-data"]}>
                   <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      Desenvolvedor Web
+                      Web Developer
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
                     >
-                      Grupo Zwela (atual)
+                      Grupo Zwela (current)
                     </span>
                   </div>
                 </div>
@@ -148,12 +148,12 @@ export function Home() {
                   <MdVerified className={styles["about__information-icon"]} />
                   <div>
                     <span className={styles["about__information-subtitle"]}>
-                      Desenvolvedor Frontend
+                      Frontend Developer
                     </span>
                     <span
                       className={styles["about__information-subtitle-small"]}
                     >
-                      Bukaapp - 8 meses
+                      Bukaapp - 8 months
                     </span>
                   </div>
                 </div>
@@ -180,8 +180,8 @@ export function Home() {
           className={`${styles["skills"]} ${styles["section"]}`}
           id="skills"
         >
-          <span className={styles["section-subtitle"]}>Por Que Eu</span>
-          <h2 className={styles["section-title"]}>Minhas habilidades</h2>
+          <span className={styles["section-subtitle"]}>Why Choose Me</span>
+          <h2 className={styles["section-title"]}>My expertise Area</h2>
 
           <div
             className={`${styles["skills__container"]} ${styles["bd-grid"]}`}
@@ -190,41 +190,40 @@ export function Home() {
               <h3 className={styles["skills__subtitle"]}>Frontend</h3>
 
               <Skill nameSkill="HTML/CSS" xp={5} />
-              <Skill nameSkill="javascript" xp={3} />
+              <Skill nameSkill="JavaScript" xp={4} />
               <Skill nameSkill="React.js" xp={2} />
-              <Skill nameSkill="react native" xp={1} />
+              <Skill nameSkill="React native" xp={1} />
             </div>
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>Backend</h3>
 
-              <Skill nameSkill="node.js" xp={1} />
-              <Skill nameSkill="mongodb" xp={1} />
-              <Skill nameSkill="express" xp={1} />
+              <Skill nameSkill="Linux Server" xp={3} />
+              <Skill nameSkill="Node.js" xp={1} />
+              <Skill nameSkill="Mongodb" xp={1} />
+              <Skill nameSkill="Express" xp={1} />
             </div>
 
             <div className={styles["skills__content"]}>
               <h3 className={styles["skills__subtitle"]}>WordPress</h3>
-              <Skill nameSkill="Plataforma Wordpress" xp={2} />
+              <Skill nameSkill="WordPress Platform" xp={3} />
               <Skill nameSkill="Google Analytics" xp={2} />
-              <Skill nameSkill="Woocommerce" xp={2} />
-              <Skill nameSkill="Ads" xp={2} />
+              <Skill nameSkill="Woocomerce" xp={3} />
+              <Skill nameSkill="ADS" xp={1} />
             </div>
 
             <div className={styles["skills__content"]}>
-              <h3 className={styles["skills__subtitle"]}>Outras</h3>
-              <Skill nameSkill="SEO" xp={1} />
-              <Skill nameSkill="Newsletter" xp={2} />
-              <Skill nameSkill="Servidores Linux" xp={3} />
-              <Skill nameSkill="Git" xp={5} />
+              <h3 className={styles["skills__subtitle"]}>Others</h3>
               <Skill nameSkill="Github" xp={5} />
+              <Skill nameSkill="SEO" xp={1} />
+              <Skill nameSkill="Git" xp={5} />
             </div>
           </div>
         </section>
 
         <section className={`${styles["education"]} ${styles["section"]}`}>
-          <span className={styles["section-subtitle"]}>Qualificação</span>
-          <h2 className={styles["section-title"]}>Algumas Certificações</h2>
+          <span className={styles["section-subtitle"]}>Qualification</span>
+          <h2 className={styles["section-title"]}>My Education</h2>
 
           <div
             className={`${styles["education__container"]} ${styles["bd-grid"]}`}
@@ -235,6 +234,7 @@ export function Home() {
                   year={value.year}
                   institute={value.institute}
                   course={value.tittle}
+                  title={value.diploma}
                 />
               );
             })}
@@ -245,34 +245,34 @@ export function Home() {
           className={`${styles["services"]} ${styles["section"]}`}
           id="services"
         >
-          <span className={styles["section-subtitle"]}>O Que Ofereço</span>
-          <h2 className={styles["section-title"]}>Meus Serviços</h2>
+          <span className={styles["section-subtitle"]}>What I Offer</span>
+          <h2 className={styles["section-title"]}>My Services</h2>
 
           <div
             className={`${styles["services__container"]} ${styles["bd-grid"]}`}
           >
             <ServiceCard
               icon={<MdMonitor />}
-              title="Desenvolvedor Frontend"
-              description="Crio sites e aplicações web responsivas com a tecnologia React"
+              title="Frontend Development"
+              description="I create responsive websites and web applications with React technology"
             />
 
             <ServiceCard
               icon={<FiServer />}
-              title="Desenvolvedor Backend"
-              description="Sou novo na área, mas já tenho algo para dar. E sempre tento fazer o meu melhor."
+              title="Backend Development"
+              description="I'm new to the area, but I already have something to give. And I always try to do my best."
             />
 
             <ServiceCard
               icon={<ImWordpress />}
-              title="Desenvolvedor WordPress"
-              description="Possuo experiência com WordPress desde a criação de sites, blogues, até lojas virtuais."
+              title="WordPress Development"
+              description="I have experience in WordPress development, creating websites, blogs, even online stores."
             />
 
             <ServiceCard
               icon={<FaPencilAlt />}
-              title="Criador de Conteúdo"
-              description="Escrevo alguns blog posts focados em tecnologia na plataforma Medium."
+              title="Content Creator"
+              description="I write some tech-focused blog posts on the Medium platform."
             />
           </div>
         </section>
@@ -285,17 +285,18 @@ export function Home() {
               <h2
                 className={`${styles["section-title"]} ${styles["project__title"]}`}
               >
-                Oportunidade de trabalho para mim?
+                Do you have a project in mind?
               </h2>
               <p className={styles["project__description"]}>
-                Sou um desenvolvedor com alguma experiência, se você estiver
-                interessado em mim, por favor me diga qualquer coisa.
+                If you have a project that you want to carry out, do not
+                hesitate and tell me what it is, and what services I can offer
+                you, contact me directly here.
               </p>
               <a
                 href="#contact"
                 className={`${styles["button"]} ${styles["button__light"]}`}
               >
-                Contactar
+                Contact Me
               </a>
             </div>
 
@@ -307,8 +308,8 @@ export function Home() {
           className={`${styles["works"]} ${styles["section"]}`}
           id="works"
         >
-          <span className={styles["section-subtitle"]}>Meu Portfolio</span>
-          <h2 className={styles["section-title"]}>Alguns Projetos</h2>
+          <span className={styles["section-subtitle"]}>My Portfolio</span>
+          <h2 className={styles["section-title"]}>Recent Works</h2>
 
           <div className={`${styles["works__container"]} ${styles["bd-grid"]}`}>
             {worksList.map((value, index) => {
@@ -327,8 +328,8 @@ export function Home() {
           className={`${styles["contact"]} ${styles["section"]}`}
           id="contact"
         >
-          <span className={styles["section-subtitle"]}>Contate-me</span>
-          <h2 className={styles["section-title"]}>Entrar Em Contato</h2>
+          <span className={styles["section-subtitle"]}>Contact Me</span>
+          <h2 className={styles["section-title"]}>Get In Touch</h2>
 
           <div
             className={`${styles["contact__container"]} ${styles["bd-grid"]}`}
@@ -341,7 +342,7 @@ export function Home() {
               <div className={styles["contact__inputs"]}>
                 <input
                   type="text"
-                  placeholder="Nome"
+                  placeholder="Name"
                   name="name"
                   className={`${styles["contact__input"]} ${styles["textValue"]}`}
                   required
@@ -358,14 +359,14 @@ export function Home() {
               <input
                 type="text"
                 name="_subject"
-                placeholder="Assunto"
+                placeholder="Project"
                 className={styles["contact__input"]}
               />
               <textarea
                 name="message"
                 cols="0"
                 rows="10"
-                placeholder="Mensagem"
+                placeholder="Message"
                 className={`${styles["contact__input"]} ${styles["textValue"]}`}
               ></textarea>
 
@@ -386,13 +387,13 @@ export function Home() {
                 value="Send Message"
                 className={`${styles["button"]} ${styles["contact__button"]}`}
               >
-                Enviar
+                Send Message
               </button>
             </form>
 
             <div>
               <div className={styles["contact__info"]}>
-                <h3 className={styles["contact__subtitle"]}>Me ligue</h3>
+                <h3 className={styles["contact__subtitle"]}>Call me</h3>
                 <span className={styles["contact__text"]}>+244931509802</span>
               </div>
 
@@ -404,7 +405,7 @@ export function Home() {
               </div>
 
               <div className={styles["contact__info"]}>
-                <h3 className={styles["contact__subtitle"]}>Localização</h3>
+                <h3 className={styles["contact__subtitle"]}>Location</h3>
                 <span className={styles["contact__text"]}>
                   Rua E, Edificio C15, 2-3
                 </span>

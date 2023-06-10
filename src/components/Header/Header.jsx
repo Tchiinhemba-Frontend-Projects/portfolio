@@ -55,7 +55,7 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Início
+                  Home
                 </a>
               </li>
               <li className={styles["nav__item"]}>
@@ -64,7 +64,7 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Sobre
+                  About
                 </a>
               </li>
               <li className={styles["nav__item"]}>
@@ -73,7 +73,7 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Habilidades
+                  Skills
                 </a>
               </li>
               <li className={styles["nav__item"]}>
@@ -82,7 +82,7 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Serviços
+                  Services
                 </a>
               </li>
               <li className={styles["nav__item"]}>
@@ -91,7 +91,7 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Projectos
+                  Works
                 </a>
               </li>
               <li className={styles["nav__item"]}>
@@ -100,7 +100,7 @@ export function Header(props) {
                   className={`${styles["nav__link"]}`}
                   onClick={() => show()}
                 >
-                  Contacto
+                  Contact Me
                 </a>
               </li>
             </ul>
