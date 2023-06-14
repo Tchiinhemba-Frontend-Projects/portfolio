@@ -8,10 +8,10 @@ export function Thank(props) {
         <h1
           className={`${styles["section-title"]} ${styles["project__title"]}`}
         >
-          Obrigadooooo!
+          Thank Youuuuuu!
         </h1>
         <p className={styles["project__description"]}>
-          Seu email foi enviado com SUCESSO!
+          Your email has been sent successfully!
         </p>
         <Link
           to="/"
